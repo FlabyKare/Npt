@@ -1,12 +1,14 @@
 // Header
 
 @media (min-width: 320px) and (max-width: 575.98px) {
-   .logo {
-      position: fixed;
-      z-index: 1000;
+   .main_header_wrapper {
+      nav {
+         padding-top: 42px;
+      }
    }
-   body {
-      padding-top: 60px !important;
+   .logo {
+      position: relative;
+      z-index: 1000;
    }
    .desktop_links,
    .desktop_messengers {
@@ -14,22 +16,17 @@
    }
    .examples {
       display: flex !important;
-   }
-   .desktop_nav {
-      //   padding-top: 42px;
    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .main_header_wrapper {
+      nav {
+         padding-top: 42px;
+      }
+   }
    .logo {
-      position: fixed;
-      z-index: 1000;
-   }
-   body {
-      padding-top: 60px !important;
-   }
-   .desktop_nav {
-      position: fixed;
+      position: relative;
       z-index: 1000;
    }
    .desktop_links,
@@ -38,9 +35,6 @@
    }
    .examples {
       display: flex !important;
-   }
-   .desktop_nav {
-      //   padding-top: 42px;
    }
 }
 @media (min-width: 768px) {
@@ -51,13 +45,33 @@
       }
    }
 }
+@media (max-height: 399.98px) {
+   .menu_wrapper .links {
+      margin-top: 120px !important;
+   }
+   .menu_active img {
+      margin: 70px auto 43px !important;
+   }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .desktop_nav {
+      padding-top: 52px;
+      padding-bottom: 283px;
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .desktop_nav {
+      padding-top: 52px;
+      padding-bottom: 283px;
+   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+   .desktop_nav {
+      padding-top: 52px;
+      padding-bottom: 283px;
+   }
 }
 
 @media (min-width: 1400px) {
