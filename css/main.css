@@ -335,9 +335,7 @@ body::-webkit-scrollbar-button {
 }
 
 #preloader {
-  background: url(../img/Header/preloader.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #003442;
   position: fixed;
   top: 0;
   left: 0;
