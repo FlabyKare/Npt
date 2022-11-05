@@ -1,0 +1,53 @@
+// Header
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+   body {
+      padding-top: 60px !important;
+   }
+   .desktop_links,
+   .desktop_messengers {
+      display: none !important;
+   }
+   .examples {
+      display: flex !important;
+   }
+   .desktop_nav {
+    //   padding-top: 42px;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+   body {
+      padding-top: 60px !important;
+   }
+   .desktop_nav {
+      position: fixed;
+      z-index: 1000;
+   }
+   .desktop_links,
+   .desktop_messengers {
+      display: none !important;
+   }
+   .examples {
+      display: flex !important;
+   }
+   .desktop_nav {
+    //   padding-top: 42px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+   .desktop_nav {
+      padding-top: 52px;
+      padding-bottom: 283px;
+   }
+}
