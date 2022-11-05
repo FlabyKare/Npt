@@ -332,10 +332,7 @@ nav {
       opacity: 0.6;
    }
 }
-.logo {
-   position: fixed;
-   z-index: 1000;
-}
+
 .menu_wrapper {
    width: 0px;
    position: fixed;
@@ -360,25 +357,26 @@ nav {
    width: 100%;
    padding-bottom: 53px;
    overflow: scroll !important;
+   .links {
+      position: relative;
+      z-index: 1000;
+   }
    a {
-    display: inline-block !important;
-    background: url(../img/Header/link_bg.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-width: 170px;
-    max-width: fit-content;
-    text-align: center;
-    padding: 10px 0;
-    &::after{
-        display: none !important;
-    }
- }
+      display: inline-block !important;
+      background: url(../img/Header/link_bg.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-width: 170px;
+      max-width: fit-content;
+      text-align: center;
+      padding: 10px 0;
+      &::after {
+         display: none !important;
+      }
+   }
 }
-.links {
-   position: relative;
-   z-index: 1000;
-}
+
 .body_hiden {
    display: none !important;
 }
