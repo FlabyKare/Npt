@@ -313,6 +313,65 @@ body {
   stroke-dashoffset: -90;
 }
 
+.menu_wrapper {
+  width: 0px;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: url(../img/Header/mobile_Menu_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu_wrapper .links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+  margin-top: 214px;
+}
+.menu_wrapper .links a {
+  display: none;
+}
+
+.menu_active {
+  width: 100%;
+  padding-bottom: 53px;
+  overflow: scroll !important;
+}
+.menu_active .links {
+  position: relative;
+  z-index: 1000;
+}
+.menu_active a {
+  display: inline-block !important;
+  background: url(../img/Header/link_bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 170px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu_active a::after {
+  display: none !important;
+}
+
+.body_hiden {
+  display: none !important;
+}
+
+.menu_link font {
+  padding: 0 15px;
+}
+
 .container {
   width: 100%;
   max-width: 1169px;
@@ -393,61 +452,6 @@ nav ul {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   opacity: 0.6;
-}
-
-.menu_wrapper {
-  width: 0px;
-  position: fixed;
-  z-index: 999;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  background: url(../img/Header/mobile_Menu_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.menu_wrapper .links {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 34px;
-  margin-top: 214px;
-}
-.menu_wrapper .links a {
-  display: none;
-}
-
-.menu_active {
-  width: 100%;
-  padding-bottom: 53px;
-  overflow: scroll !important;
-}
-.menu_active .links {
-  position: relative;
-  z-index: 1000;
-}
-.menu_active a {
-  display: inline-block !important;
-  background: url(../img/Header/link_bg.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-width: 170px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  text-align: center;
-  padding: 10px 0;
-}
-.menu_active a::after {
-  display: none !important;
-}
-
-.body_hiden {
-  display: none !important;
 }
 
 .transparent_btn {

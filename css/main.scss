@@ -262,6 +262,62 @@ body {
    stroke-dashoffset: -90;
 }
 
+// Menu wrapper
+
+.menu_wrapper {
+   width: 0px;
+   position: fixed;
+   z-index: 999;
+   right: 0;
+   top: 0;
+   height: 100vh;
+   background: url(../img/Header/mobile_Menu_bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: 0.5s;
+   .links {
+      flex-direction: column;
+      gap: 34px;
+      margin-top: 214px;
+      a {
+         display: none;
+      }
+   }
+}
+.menu_active {
+   width: 100%;
+   padding-bottom: 53px;
+   overflow: scroll !important;
+   .links {
+      position: relative;
+      z-index: 1000;
+   }
+   a {
+      display: inline-block !important;
+      background: url(../img/Header/link_bg.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-width: 170px;
+      max-width: fit-content;
+      text-align: center;
+      padding: 10px 0;
+      &::after {
+         display: none !important;
+      }
+   }
+}
+
+.body_hiden {
+   display: none !important;
+}
+
+.menu_link{
+    font{
+        padding: 0 15px;
+    }
+}
+
 .container {
    width: 100%;
    max-width: 1169px;
@@ -331,54 +387,6 @@ nav {
       transition: 0.5s;
       opacity: 0.6;
    }
-}
-
-.menu_wrapper {
-   width: 0px;
-   position: fixed;
-   z-index: 999;
-   right: 0;
-   top: 0;
-   height: 100vh;
-   background: url(../img/Header/mobile_Menu_bg.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   transition: 0.5s;
-   .links {
-      flex-direction: column;
-      gap: 34px;
-      margin-top: 214px;
-      a {
-         display: none;
-      }
-   }
-}
-.menu_active {
-   width: 100%;
-   padding-bottom: 53px;
-   overflow: scroll !important;
-   .links {
-      position: relative;
-      z-index: 1000;
-   }
-   a {
-      display: inline-block !important;
-      background: url(../img/Header/link_bg.png);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-width: 170px;
-      max-width: fit-content;
-      text-align: center;
-      padding: 10px 0;
-      &::after {
-         display: none !important;
-      }
-   }
-}
-
-.body_hiden {
-   display: none !important;
 }
 
 .transparent_btn {
