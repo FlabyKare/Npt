@@ -31,7 +31,7 @@ const menuLinks = document.querySelectorAll(".menu_link");
 
 function btn_animation() {
    const currentState = button.getAttribute("data-state");
-   if (!currentState || currentState === "closed") {
+   if (!currentState || currentState === "opened") {
       button.setAttribute("data-state", "closed");
       button.setAttribute("aria-expanded", "false");
    }
@@ -52,4 +52,9 @@ function toggleMenu() {
 
 menu_btn.addEventListener("click", toggleMenu);
 // menu_close.addEventListener("click", toggleMenu);
-menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
+menuLinks.forEach((link) =>
+   link.addEventListener("click", () => {
+      toggleMenu();
+      btn_animation();
+   })
+);
