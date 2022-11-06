@@ -1,6 +1,9 @@
 // Header
 
 @media (min-width: 320px) and (max-width: 575.98px) {
+   body {
+      padding-bottom: 37px !important;
+   }
    .main_header_wrapper {
       nav {
          padding-top: 42px;
@@ -20,6 +23,9 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   body {
+      padding-bottom: 37px !important;
+   }
    .main_header_wrapper {
       nav {
          padding-top: 42px;
@@ -46,13 +52,13 @@
    }
 }
 @media (max-height: 523.98px) {
-    .menu_wrapper .links {
-       margin-top: 60px !important;
-    }
-    .menu_active img {
-       margin: 70px auto 43px !important;
-    }
- }
+   .menu_wrapper .links {
+      margin-top: 60px !important;
+   }
+   .menu_active img {
+      margin: 70px auto 43px !important;
+   }
+}
 @media (min-height: 524px) and(max-height: 649.98px) {
    .menu_wrapper .links {
       margin-top: 160px !important;
@@ -143,6 +149,41 @@
          font-size: 16px !important;
       }
    }
+   .third {
+      background: url(../img/Mobile_bg/3_bg.jpg) !important ;
+      .container {
+         padding: 0 !important;
+      }
+      li {
+         padding: 0 15px !important;
+      }
+      .desktop_title_border {
+         display: none !important;
+      }
+      .mobile_title_border {
+         display: block !important;
+         width: 100%;
+      }
+      .mobile_glass_ball {
+         display: block !important;
+         width: 100%;
+         margin-top: -40%;
+      }
+      .title {
+         //  font-size: 19px !important;
+         //  padding-top: 23px !important;
+         display: none !important;
+      }
+      .third_subtitle {
+         font-size: 15px !important;
+      }
+      li {
+         font-size: 14px !important;
+      }
+      .last_li {
+         margin-top: -24%;
+      }
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -194,9 +235,27 @@
          font-size: 16px !important;
       }
    }
+   .third {
+      .title {
+         font-size: 29px !important;
+         padding-top: 23px !important;
+      }
+      .third_subtitle {
+         font-size: 18px !important;
+      }
+      li {
+         font-size: 16px !important;
+      }
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .third {
+      .title {
+         font-size: 38px !important;
+         padding-top: 49px !important;
+      }
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
