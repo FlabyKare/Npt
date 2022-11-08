@@ -96,13 +96,12 @@
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {
-   .main_header {
-      background: url(../img/Header/mobile_header.jpg) !important;
+   body {
+      background: url(../img/Mobile_bg/мобилка.jpg) !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
    }
    .info {
-      padding-bottom: 315px !important;
       text-align: center !important;
       h1 {
          font-size: 30px !important;
@@ -188,11 +187,10 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-   .main_header {
-      background: url(../img/Header/mobile_header.jpg) !important;
-      background-repeat: no-repeat !important;
-      background-size: cover !important;
-   }
+   //    .main_header {
+   //       background: url(../img/Header/mobile_header.jpg) !important;
+
+   //    }
    .info {
       padding-bottom: 315px !important;
       text-align: center !important;
@@ -267,6 +265,37 @@
 
 @media (min-width: 1400px) {
 }
+
+
+
+
+
+// Регулировка padding-bottom на мобилках под фон
+
+@media (min-width: 320px) and (max-width: 374.98px) {
+    .info{
+        padding-bottom: 75% !important;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 520.98px) {
+    .info{
+        padding-bottom: 130% !important;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 575.98px) {
+    .info{
+        padding-bottom: 130% !important;
+    }
+}
+
+
+
+
+
+
+
 
 // Intro
 

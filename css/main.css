@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (min-width: 320px) and (max-width: 575.98px) {
   body {
     padding-bottom: 37px !important;
@@ -89,13 +90,12 @@
   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
-  .main_header {
-    background: url(../img/Header/mobile_header.jpg) !important;
+  body {
+    background: url(../img/Mobile_bg/мобилка.jpg) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
   .info {
-    padding-bottom: 315px !important;
     text-align: center !important;
   }
   .info h1 {
@@ -186,11 +186,6 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .main_header {
-    background: url(../img/Header/mobile_header.jpg) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-  }
   .info {
     padding-bottom: 315px !important;
     text-align: center !important;
@@ -254,6 +249,21 @@
   .third .title {
     font-size: 38px !important;
     padding-top: 49px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 374.98px) {
+  .info {
+    padding-bottom: 75% !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 520.98px) {
+  .info {
+    padding-bottom: 130% !important;
+  }
+}
+@media (min-width: 521px) and (max-width: 575.98px) {
+  .info {
+    padding-bottom: 130% !important;
   }
 }
 html,
@@ -392,7 +402,7 @@ table {
 }
 
 body {
-  background: #08333d;
+  background: url(../img/Header/backg.jpg);
   scroll-behavior: smooth;
   padding-bottom: 60px;
 }
@@ -595,8 +605,8 @@ body::-webkit-scrollbar-button {
 .menu_active {
   width: 100%;
   padding-bottom: 53px;
-  overflow-y: scroll !important;
-  overflow: overlay;
+  overflow-y: auto !important;
+  overflow-x: overlay;
 }
 .menu_active img {
   margin: 170px auto 43px;
@@ -636,11 +646,6 @@ body::-webkit-scrollbar-button {
   max-width: 1169px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.main_header {
-  background: url(../img/Header/1_bg.jpg);
-  background-size: cover;
 }
 
 nav {
@@ -761,7 +766,8 @@ nav ul {
   content: "";
   width: 5px;
   height: 57px;
-  background: #fff;
+  background: #fff !important;
+  color: #fff !important;
   display: block;
   border-radius: 20px;
 }
@@ -869,7 +875,8 @@ nav ul {
   text-fill-color: transparent;
 }
 
-.mobile_title_border, .mobile_glass_ball {
+.mobile_title_border,
+.mobile_glass_ball {
   display: none;
 }
 
@@ -882,6 +889,7 @@ nav ul {
 }
 .third .subtitle_container {
   position: relative;
+  margin-bottom: 111px;
 }
 .third .subtitle_container img {
   width: 100%;
@@ -895,7 +903,6 @@ nav ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 0 auto 111px;
   text-align: center;
   padding: 43px 0 58px;
 }
