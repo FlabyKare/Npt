@@ -131,7 +131,7 @@ table {
 }
 
 body {
-   background: url(../img/Header/backg.jpg);
+   background: url(../img/Header/1_bg.jpg);
    scroll-behavior: smooth;
    padding-bottom: 60px;
    &::-webkit-scrollbar {
@@ -366,9 +366,6 @@ body {
    }
 }
 
-.body_hiden {
-   display: none !important;
-}
 .menu_link {
    font {
       padding: 0 15px;
@@ -616,11 +613,14 @@ nav {
 .mobile_glass_ball {
    display: none;
 }
+.sphere_desktop {
+   display: none;
+}
 .third {
-   background: url(../img/Header/2_bg.jpg);
-   background-size: cover !important;
-   background-repeat: no-repeat !important;
-   background-position: center !important;
+   //    background: url(../img/Header/2_bg.jpg);
+   //    background-size: cover !important;
+   //    background-repeat: no-repeat !important;
+   //    background-position: center !important;
    padding-bottom: 190px;
    .subtitle_container {
       position: relative;
@@ -644,6 +644,8 @@ nav {
    }
    ul {
       max-width: 713px;
+      position: relative;
+      z-index: 1;
    }
    .third_subtitle {
       font-family: "Strong", sans-serif;

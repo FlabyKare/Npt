@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .third .subtitle_container {
+    position: relative;
+    margin-bottom: 0px !important;
+  }
+  .body_hiden {
+    display: none !important;
+  }
   body {
     padding-bottom: 37px !important;
   }
@@ -21,6 +28,26 @@
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .third .subtitle_container {
+    position: relative;
+    margin-bottom: 0px !important;
+  }
+  .sphere_desktop {
+    display: inline-block !important;
+    /* margin: 0 auto; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: inherit;
+    position: relative;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-42%, -57%);
+    transform: translate(-50%, -15%);
+  }
+  .body_hiden {
+    display: none !important;
+  }
   body {
     padding-bottom: 37px !important;
   }
@@ -42,6 +69,9 @@
   }
 }
 @media (min-width: 768px) {
+  .sphere_desktop {
+    display: inline-block !important;
+  }
   .menu_wrapper {
     display: none !important;
   }
@@ -66,24 +96,76 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .sphere_desktop {
+    display: inline-block !important;
+    /* margin: 0 auto; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: inherit;
+    position: relative;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-42%, -57%);
+    transform: translate(-50%, -50%);
+  }
   .desktop_nav {
     padding-top: 52px;
     padding-bottom: 283px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .sphere_desktop {
+    display: inline-block !important;
+    /* margin: 0 auto; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: inherit;
+    position: relative;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-42%, -57%);
+    transform: translate(-50%, -50%);
+  }
   .desktop_nav {
     padding-top: 52px;
     padding-bottom: 283px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .sphere_desktop {
+    display: inline-block !important;
+    /* margin: 0 auto; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-42%, -57%);
+            transform: translate(-42%, -57%);
+  }
   .desktop_nav {
     padding-top: 52px;
     padding-bottom: 283px;
   }
 }
 @media (min-width: 1400px) {
+  .sphere_desktop {
+    display: inline-block !important;
+    /* margin: 0 auto; */
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-15%, -57%);
+            transform: translate(-15%, -57%);
+  }
   .desktop_nav {
     padding-top: 52px;
     padding-bottom: 283px;
@@ -184,10 +266,19 @@
   .third .last_li {
     margin-top: -24%;
   }
+  .about {
+    padding-bottom: 30px !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .third ul {
+    margin-top: 50px !important;
+  }
+  .about {
+    padding-bottom: 30px !important;
+  }
   .info {
-    padding-bottom: 315px !important;
+    padding-bottom: 75% !important;
     text-align: center !important;
   }
   .info h1 {
@@ -402,7 +493,7 @@ table {
 }
 
 body {
-  background: url(../img/Header/backg.jpg);
+  background: url(../img/Header/1_bg.jpg);
   scroll-behavior: smooth;
   padding-bottom: 60px;
 }
@@ -627,10 +718,6 @@ body::-webkit-scrollbar-button {
   position: relative;
   z-index: 1000;
   opacity: 1 !important;
-}
-
-.body_hiden {
-  display: none !important;
 }
 
 .menu_link font {
@@ -880,11 +967,11 @@ nav ul {
   display: none;
 }
 
+.sphere_desktop {
+  display: none;
+}
+
 .third {
-  background: url(../img/Header/2_bg.jpg);
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
   padding-bottom: 190px;
 }
 .third .subtitle_container {
@@ -908,6 +995,8 @@ nav ul {
 }
 .third ul {
   max-width: 713px;
+  position: relative;
+  z-index: 1;
 }
 .third .third_subtitle {
   font-family: "Strong", sans-serif;
