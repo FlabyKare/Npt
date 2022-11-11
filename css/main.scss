@@ -695,12 +695,52 @@ nav {
 
 .why {
    .title {
-      max-width: 820px;
       text-align: center;
       margin: auto;
    }
+   .text {
+      margin-top: 74px;
+      margin-bottom: 68px;
+   }
+   .container {
+      max-width: 1280px;
+      padding: 67px 15px 63px;
+   }
+   .btn {
+      display: block;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      width: 555px;
+      img {
+         cursor: pointer;
+      }
+      p {
+         z-index: 2;
+         position: absolute;
+         /* padding: 0 15px; */
+         width: 75%;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         font-family: "Furore", sans-serif;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 30px;
+         text-align: center;
+         color: #ffffff;
+      }
+   }
 }
-
-.mobile_line{
-    display: none;
+.text {
+   font-family: "Strong", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   text-align: center;
+   color: #ffffff;
+}
+.mobile_line {
+   display: none;
 }

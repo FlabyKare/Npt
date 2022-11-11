@@ -267,10 +267,24 @@
    }
    .why {
       margin-top: 10%;
-      .title{
-        font-size: 28px !important;
-        line-height: 40px !important;
-        padding-bottom: 0 !important; 
+      .title {
+         font-size: 28px !important;
+         line-height: 40px !important;
+         padding-bottom: 0 !important;
+      }
+      .container {
+         padding: 30px 15px !important;
+      }
+      .btn {
+         width: 100% !important;
+         img {
+            width: 100%;
+         }
+         p {
+            font-size: 11px !important;
+            letter-spacing: 1px !important;
+            line-height: 15px !important;
+         }
       }
       .desktop_line {
          display: none !important;
