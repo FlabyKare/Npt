@@ -146,7 +146,6 @@ body {
    &::-webkit-scrollbar-thumb {
       z-index: 999999999999999999999999999999999999 !important;
       background: #03677f !important;
-      border-radius: 20px;
       cursor: pointer !important;
    }
    &::-webkit-scrollbar-button {
@@ -566,6 +565,7 @@ nav {
    line-height: 58px;
    text-transform: uppercase;
    color: #fff;
+
    span {
       background: linear-gradient(
          92.3deg,
@@ -629,18 +629,20 @@ nav {
          width: 100%;
       }
    }
-   .title {
-      //   background: url(../img/Header/title_border.png);
-      //   background-size: contain;
-      //   background-repeat: no-repeat;
-      //   width: 960px;
-      width: max-content;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 43px 0 58px;
+   .third_wrapper {
+      .title {
+         //   background: url(../img/Header/title_border.png);
+         //   background-size: contain;
+         //   background-repeat: no-repeat;
+         //   width: 960px;
+         width: max-content;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         padding: 43px 0 58px;
+      }
    }
    ul {
       max-width: 713px;
@@ -689,4 +691,16 @@ nav {
       margin-top: 30px;
       margin-bottom: 30px;
    }
+}
+
+.why {
+   .title {
+      max-width: 820px;
+      text-align: center;
+      margin: auto;
+   }
+}
+
+.mobile_line{
+    display: none;
 }

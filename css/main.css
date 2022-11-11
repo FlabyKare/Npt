@@ -232,9 +232,6 @@
   .about_wrapper li {
     font-size: 16px !important;
   }
-  .third {
-    background: url(../img/Mobile_bg/3_bg.jpg) !important;
-  }
   .third .container {
     padding: 0 !important;
   }
@@ -254,7 +251,7 @@
     width: 100%;
     margin-top: -40%;
   }
-  .third .title {
+  .third .third_wrapper .title {
     display: none !important;
   }
   .third .third_subtitle {
@@ -268,6 +265,20 @@
   }
   .about {
     padding-bottom: 30px !important;
+  }
+  .why {
+    margin-top: 10%;
+  }
+  .why .title {
+    font-size: 28px !important;
+    line-height: 40px !important;
+    padding-bottom: 0 !important;
+  }
+  .why .desktop_line {
+    display: none !important;
+  }
+  .why .mobile_line {
+    display: inline-block !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -325,7 +336,7 @@
   .about_wrapper li {
     font-size: 16px !important;
   }
-  .third .title {
+  .third .third_wrapper .title {
     font-size: 29px !important;
     padding-top: 23px !important;
   }
@@ -335,11 +346,32 @@
   .third li {
     font-size: 16px !important;
   }
+  .why {
+    margin-top: -14%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .third .title {
+  .third_wrapper .title {
     font-size: 38px !important;
     padding-top: 49px !important;
+  }
+  .why {
+    margin-top: -44%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .why {
+    margin-top: -44%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .why {
+    margin-top: -440px;
+  }
+}
+@media (min-width: 1400px) {
+  .why {
+    margin-top: -440px;
   }
 }
 @media (min-width: 320px) and (max-width: 374.98px) {
@@ -511,7 +543,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   z-index: 999999999999999900000000000000000000 !important;
   background: #03677f !important;
-  border-radius: 20px;
   cursor: pointer !important;
 }
 body::-webkit-scrollbar-button {
@@ -981,7 +1012,7 @@ nav ul {
 .third .subtitle_container img {
   width: 100%;
 }
-.third .title {
+.third .third_wrapper .title {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1027,4 +1058,14 @@ nav ul {
 .third .middle_child {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.why .title {
+  max-width: 820px;
+  text-align: center;
+  margin: auto;
+}
+
+.mobile_line {
+  display: none;
 }

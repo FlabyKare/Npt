@@ -225,7 +225,6 @@
       }
    }
    .third {
-      background: url(../img/Mobile_bg/3_bg.jpg) !important ;
       .container {
          padding: 0 !important;
       }
@@ -245,11 +244,14 @@
          width: 100%;
          margin-top: -40%;
       }
-      .title {
-         //  font-size: 19px !important;
-         //  padding-top: 23px !important;
-         display: none !important;
+      .third_wrapper {
+         .title {
+            //  font-size: 19px !important;
+            //  padding-top: 23px !important;
+            display: none !important;
+         }
       }
+
       .third_subtitle {
          font-size: 15px !important;
       }
@@ -262,6 +264,20 @@
    }
    .about {
       padding-bottom: 30px !important;
+   }
+   .why {
+      margin-top: 10%;
+      .title{
+        font-size: 28px !important;
+        line-height: 40px !important;
+        padding-bottom: 0 !important; 
+      }
+      .desktop_line {
+         display: none !important;
+      }
+      .mobile_line {
+         display: inline-block !important;
+      }
    }
 }
 
@@ -320,10 +336,13 @@
       }
    }
    .third {
-      .title {
-         font-size: 29px !important;
-         padding-top: 23px !important;
+      .third_wrapper {
+         .title {
+            font-size: 29px !important;
+            padding-top: 23px !important;
+         }
       }
+
       .third_subtitle {
          font-size: 18px !important;
       }
@@ -331,24 +350,39 @@
          font-size: 16px !important;
       }
    }
+   .why {
+      margin-top: -14%;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-   .third {
+   .third_wrapper {
       .title {
          font-size: 38px !important;
          padding-top: 49px !important;
       }
    }
+   .why {
+      margin-top: -44%;
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .why {
+      margin-top: -44%;
+   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+   .why {
+      margin-top: -440px;
+   }
 }
 
 @media (min-width: 1400px) {
+   .why {
+      margin-top: -440px;
+   }
 }
 
 // Регулировка padding-bottom на мобилках под фон
