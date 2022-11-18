@@ -88,10 +88,25 @@ $(".table_slider").slick({
    //    nextArrow:'<img class="next slick-arrow" src="/img/Mobile_bg/arr_bottom.svg">',
    prevArrow: $(".prev"),
    nextArrow: $(".next"),
-//    responsive: [
-//       {
-//          breakpoint: 576,
-//          settings: {},
-//       },
-//    ],
+   //    responsive: [
+   //       {
+   //          breakpoint: 576,
+   //          settings: {},
+   //       },
+   //    ],
 });
+
+const table = document.querySelector(".table_visible");
+const viewFull = document.querySelector(".view_full");
+const table_visible_item = document.querySelector(".table_visible_item");
+
+viewFull.addEventListener("click", toggleActiveTable);
+table_visible_item.addEventListener("click", removeActiveTable);
+table.addEventListener("click", toggleActiveTable);
+
+function toggleActiveTable() {
+   table.classList.toggle("table_active");
+}
+function removeActiveTable() {
+    table.classList.remove(".table_active");
+ }

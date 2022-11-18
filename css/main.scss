@@ -706,10 +706,18 @@ nav {
       max-width: 550px;
       min-height: fit-content;
       text-align: center;
-      margin: auto;
+      margin: 0 auto 63px;
+      &:hover {
+         opacity: 0.8;
+      }
       .btn_gragient {
          font-family: "Furore", sans-serif;
          background: none;
+
+         &:hover {
+            transform: scale(1) !important;
+            opacity: 1 !important;
+         }
       }
    }
    .btn_gragient {
@@ -719,14 +727,12 @@ nav {
    }
 }
 .tables_btn {
-   margin: 47px auto 58px;
-   max-width: 250px !important;
+   margin: 47px auto 58px !important;
+   max-width: 350px !important;
    font-size: 25px !important;
+   min-height: 80px !important;
 }
 .why {
-   .btn {
-      margin-bottom: 63px;
-   }
    .title {
       text-align: center;
       margin: auto;
@@ -750,6 +756,10 @@ nav {
       cursor: pointer;
    }
 }
+.table_visible {
+   display: none;
+}
+
 .table {
    position: relative;
 }
