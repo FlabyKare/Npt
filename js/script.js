@@ -79,10 +79,19 @@ for (let anchor of anchors) {
 $(".table_slider").slick({
    vertical: true,
    verticalSwiping: true,
+   dots: false,
    slidesToShow: 1,
    infinite: false,
    // autoplay: true,
-   prevArrow: '<img class="prev slick-arrow" src="/img/Mobile_bg/arr_up.svg">',
-   nextArrow: '<img class="next slick-arrow" src="/img/Mobile_bg/arr_bottom.svg">',
-
+   //    appendArrows: ".slider-arrows",
+   //    prevArrow: '<img class="prev slick-arrow" src="/img/Mobile_bg/arr_up.svg">',
+   //    nextArrow:'<img class="next slick-arrow" src="/img/Mobile_bg/arr_bottom.svg">',
+   prevArrow: $(".prev"),
+   nextArrow: $(".next"),
+//    responsive: [
+//       {
+//          breakpoint: 576,
+//          settings: {},
+//       },
+//    ],
 });

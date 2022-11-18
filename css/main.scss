@@ -345,7 +345,7 @@ body {
    padding-bottom: 53px;
    overflow-y: auto !important;
    overflow-x: overlay;
-   .menu_line  {
+   .menu_line {
       margin: 170px auto 43px;
       width: 95%;
       height: 4px;
@@ -744,6 +744,7 @@ nav {
    position: relative;
 }
 .table_wrapper {
+   position: relative;
    height: 305px;
    overflow-y: scroll;
    padding-right: 6px;
@@ -774,6 +775,7 @@ nav {
       display: none;
    }
 }
+
 .text {
    font-family: "Strong", sans-serif;
    font-weight: 400;
