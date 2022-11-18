@@ -696,7 +696,33 @@ nav {
       margin-bottom: 30px;
    }
 }
-
+.why_wrapper {
+   .why_button {
+      background: url(../img/Header/why_btn.png) !important;
+      background-size: contain !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      padding: 20px 30px;
+      max-width: 550px;
+      min-height: fit-content;
+      text-align: center;
+      margin: auto;
+      .btn_gragient {
+         font-family: "Furore", sans-serif;
+         background: none;
+      }
+   }
+   .btn_gragient {
+      width: 100%;
+      margin: 0 auto;
+      max-width: fit-content;
+   }
+}
+.tables_btn {
+   margin: 47px auto 58px;
+   max-width: 250px !important;
+   font-size: 25px !important;
+}
 .why {
    .btn {
       margin-bottom: 63px;
@@ -719,25 +745,9 @@ nav {
    text-align: center;
    margin: auto;
    position: relative;
-   width: 555px;
+
    img {
       cursor: pointer;
-   }
-   p {
-      z-index: 2;
-      position: absolute;
-      /* padding: 0 15px; */
-      width: 75%;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      font-family: "Furore", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
-      text-align: center;
-      color: #ffffff;
    }
 }
 .table {
@@ -790,9 +800,25 @@ nav {
    height: 385px;
    display: block;
    margin: auto;
+   padding-bottom: 30px;
 }
 .btn_gragient {
    transition: 0.5s;
+   font-family: "Strong", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   color: #ffffff;
+   background: url(../img/Header/btn_gragient.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   border: none;
+   width: fit-content;
+   padding: 23px 15px;
+   min-height: 55px;
+   max-width: 300px;
    * {
       cursor: pointer;
    }
