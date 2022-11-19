@@ -496,20 +496,16 @@
    }
    .table_active {
       display: block !important;
-      position: fixed;
       background: rgba(0, 0, 0, 1);
-      width: 100%;
-      height: 100%;
+      width: 100% !important;
+      height: 100% !important;
       z-index: 11;
       img {
-         width: fit-content;
-         height: auto;
-         max-width: 80%;
-         max-height: 95%;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
+         width: fit-content !important;
+         height: auto !important;
+         max-width: 80% !important;
+         max-height: 95% !important;
+
          z-index: 12;
       }
    }
@@ -522,7 +518,10 @@
 @media (max-width: 575.98px) {
    .why_wrapper {
       .why_button {
+        //  padding: 0 30px !important;
+        //  margin-bottom: 20px !important;
          .btn_gragient {
+            // padding: 7px 10px !important;
             font-size: 13px !important;
          }
       }
