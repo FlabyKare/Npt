@@ -108,5 +108,5 @@ function toggleActiveTable() {
    table.classList.toggle("table_active");
 }
 function removeActiveTable() {
-    table.classList.remove(".table_active");
- }
+   table.classList.remove(".table_active");
+}
