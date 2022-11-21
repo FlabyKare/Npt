@@ -817,10 +817,6 @@ body::-webkit-scrollbar-button {
   display: none;
 }
 
-.loaded_hiding * {
-  display: none;
-}
-
 .loaded #preloader {
   display: none;
 }
@@ -1566,223 +1562,72 @@ nav ul {
 }
 .who_we_wrapper h3 {
   text-align: center;
+  margin-bottom: 73px;
 }
-
-.column12container {
-  width: 930px;
-}
-
-.column12 {
-  display: inline;
-  float: left;
+.who_we_wrapper .who_we_slide_item {
+  text-align: center;
+  height: 100%;
+  margin: auto;
+  padding-top: 50px;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 930px;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  /*background-color:#E5EBF0;*/
-  background-color: Silver;
 }
-
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-/*
-Item Name: jQuery Carousel Evolution
-Author: Mapalla
-Author URI: http://codecanyon.net/user/Mapalla
-Version: 1.0
-*/
-/* _______________________________________________ */
-/* CONTAINER */
-/* _______________________________________________ */
-.carousel {
-  position: relative;
-  margin: 0 auto;
-  width: 930px;
-  height: auto;
-  border: none;
-  overflow: visible;
-}
-
-/* _______________________________________________ */
-/* SLIDES */
-/* _______________________________________________ */
-/* slide container */
-.carousel .slides {
-  margin: 0;
-  padding: 0;
-  border: none;
-  list-style: none;
-  position: relative;
-  overflow: visible;
-}
-
-/* slide item */
-.carousel .slides .slideItem {
-  position: absolute;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.carousel .slides .slideItem a {
-  display: block;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-
-.carousel .slides .slideItem img {
-  margin: 0;
-  padding: 0;
-  border: none;
+.who_we_wrapper .who_we_slide_item .item_bg {
   width: 100%;
   height: 100%;
-}
-
-/* _______________________________________________ */
-/* DIRECTION BUTTON */
-/* _______________________________________________ */
-.carousel .nextButton {
   position: absolute;
-  right: 10px;
-  top: 133px;
-  width: 35px;
-  height: 35px;
-  background: url("images/next_button.png") no-repeat center;
-  cursor: pointer;
-  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-
-.carousel .prevButton {
+.who_we_wrapper .who_we_slide_item:hover .border_photo {
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+}
+.who_we_wrapper .who_we_slide_item .who_we_slide_item_title {
   position: absolute;
-  left: 10px;
-  top: 133px;
-  width: 35px;
-  height: 35px;
-  background: url("images/prev_button.png");
-  cursor: pointer;
-  z-index: 9999;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Furore", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-
-/* _______________________________________________ */
-/* NAVIGATION BUTTON */
-/* _______________________________________________ */
-/* buttons container */
-.carousel .buttonNav {
+.who_we_wrapper .who_we_slide_item .who_we_slide_item_proffesion {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 15px;
+  font-family: "Strong", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  text-transform: lowercase;
+  background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 98.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.who_we_wrapper .who_we_slide_item .who_we_slide_item_img_wrapper {
+  margin: 0 auto 41px;
   position: relative;
-  margin: 0 auto;
-  z-index: 999;
 }
-
-/* numbers */
-.carousel .buttonNav .numbers {
-  position: relative;
-  float: left;
-  margin: 5px;
-  color: #828282;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: Arial, Verdana;
+.who_we_wrapper .who_we_slide_item .who_we_slide_item_img_wrapper img {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -49%);
+          transform: translate(-50%, -49%);
 }
-
-.carousel .buttonNav .numbers:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-.carousel .buttonNav .numberActive {
-  background: none;
-  color: #000;
-  cursor: default;
-}
-
-/* bullets */
-.carousel .buttonNav .bullet {
-  position: relative;
-  float: left;
-  width: 16px;
-  height: 16px;
-  background: url(images/Bullet-White.png) no-repeat center;
-  margin: 5px;
-  float: left;
-  cursor: pointer;
-}
-
-.carousel .buttonNav .bullet:hover {
-  background: url(images/Bullet-Black.png) no-repeat center;
-}
-
-.carousel .buttonNav .bulletActive {
-  background: url(images/Bullet-Black.png) no-repeat center;
-  cursor: default;
-}
-
-/* ____________________________________________________________ */
-/* VIDEO */
-/* ____________________________________________________________ */
-.carousel .slides .videoOverlay {
-  background: url("images/video.png") no-repeat center; /* play button */
-}
-
-.carousel .slides .spinner {
-  background: #000 url(images/loading.gif) no-repeat center; /* video preloader */
-}
-
-/* _____________________________ *
-
-/* SHADOW */
-/* _____________________________ */
-.carousel .shadow {
-  width: 100%;
-  height: 82px;
-}
-
-.carousel .shadow .shadowLeft {
-  background: url("images/shadowLeft.png") no-repeat;
-  width: 100px;
-  height: 82px;
-  /* fix png problems in ie */
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale)"; /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowLeft.png, sizingmethod=scale); /* IE6 & 7 */
-}
-
-.carousel .shadow .shadowMiddle {
-  height: 82px;
-  background: url("images/shadowTile.png") repeat-x;
-  /* fix png problems in ie */
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale)"; /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowTile.png, sizingmethod=scale); /* IE6 & 7 */
-}
-
-.carousel .shadow .shadowRight {
-  width: 100px;
-  height: 82px;
-  background: url("images/shadowRight.png") no-repeat;
-  /* fix png problems in ie */
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale)"; /* IE8 */
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/shadowRight.png, sizingmethod=scale); /* IE6 & 7 */
-}
-
-/* ____________________________________________________________ */
-/* REFLECTION GRADIENT */
-/* ____________________________________________________________ */
-/* gradient color for Opera */
-.carousel .gradient {
-  background-image: url(scripts/gradient.svg);
+.who_we_wrapper .who_we_slide_item .who_we_slide_item_img_wrapper svg {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
