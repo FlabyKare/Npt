@@ -479,6 +479,8 @@
     height: auto !important;
     max-width: 80% !important;
     max-height: 95% !important;
+    min-width: 38% !important;
+    min-height: 95% !important;
     z-index: 12;
   }
 }
@@ -829,6 +831,11 @@ body::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-button {
   display: none;
+}
+
+.loaded_hiding {
+  overflow: hidden !important;
+  pointer-events: none;
 }
 
 .loaded #preloader {
@@ -1289,7 +1296,7 @@ nav ul {
 }
 
 .third {
-  padding-bottom: 190px;
+  padding-bottom: 75px;
 }
 .third .subtitle_container {
   position: relative;
@@ -1365,6 +1372,7 @@ nav ul {
 .why_wrapper .why_button .btn_gragient {
   font-family: "Furore", sans-serif;
   background: none;
+  line-height: 18px !important;
 }
 .why_wrapper .why_button .btn_gragient:hover {
   -webkit-transform: scale(1) !important;

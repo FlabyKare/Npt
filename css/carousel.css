@@ -252,9 +252,34 @@
       width: calc(var(--carousel-item-width) * 2);
       transition: 0.5s !important;
    }
+   .carousel-controls {
+      position: relative;
+      z-index: 10;
+      margin-top: -75px;
+   }
+   .carousel-control {
+      margin: 0 20px;
+      position: relative;
+      transform: scale(1);
+   }
+   .carousel-control:hover {
+      transform: scale(1.1);
+   }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
-
+   .carousel-controls {
+      position: relative;
+      z-index: 10;
+      margin-top: -75px;
+   }
+   .carousel-control {
+      margin: 0 20px;
+      position: relative;
+      transform: scale(1);
+   }
+   .carousel-control:hover {
+      transform: scale(1.1);
+   }
    .carousel-item-1,
    .carousel-item-2,
    .carousel-item-4,
