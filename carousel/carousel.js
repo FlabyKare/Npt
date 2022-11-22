@@ -7,23 +7,23 @@ class Carousel {
       this.carouselData = [
          {
             id: "1",
-            src: "../img/Slider/1.png",
+            src: "/img/Slider/1.png",
          },
          {
             id: "2",
-            src: "../img/Slider/2.png",
+            src: "/img/Slider/2.png",
          },
          {
             id: "3",
-            src: "../img/Slider/3.png",
+            src: "/img/Slider/3.png",
          },
          {
             id: "4",
-            src: "../img/Slider/4.png",
+            src: "/img/Slider/4.png",
          },
          {
             id: "5",
-            src: "../img/Slider/5.png",
+            src: "/img/Slider/5.png",
          },
       ];
       this.carouselInView = [1, 2, 3, 4, 5];
