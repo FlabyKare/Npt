@@ -111,5 +111,20 @@ function removeActiveTable() {
    table.classList.remove(".table_active");
 }
 
-// Profiles slider
-// this.carouselOptions = ["previous", "add", "play", "next"];
+// Plan text slider
+$(".plan-slider").slick({
+   arrows: false,
+   responsive: [
+      {
+         breakpoint: 576,
+         settings: {
+            dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            autoplay: true,
+         },
+      },
+   ],
+});
