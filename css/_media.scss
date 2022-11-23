@@ -530,7 +530,50 @@
          }
       }
    }
-
+   .plan-slider {
+      .slick-dots {
+         bottom: -33px;
+         .slick-active {
+            opacity: 1 !important;
+         }
+         li:nth-child(1) {
+            background: url(../img/Mobile_bg/1_.png);
+         }
+         li:nth-child(2) {
+            background: url(../img/Mobile_bg/2_.png);
+         }
+         li:nth-child(3) {
+            background: url(../img/Mobile_bg/3_.png);
+         }
+         li:nth-child(4) {
+            background: url(../img/Mobile_bg/4_.png);
+         }
+         li:nth-child(5) {
+            background: url(../img/Mobile_bg/5_.png);
+         }
+         li {
+            width: 40px;
+            height: 40px;
+            opacity: 0.5 !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            margin: 0 15px;
+            button {
+               border: 0;
+               display: inline-block;
+               height: 100%;
+               width: 100%;
+               outline: none;
+               cursor: pointer;
+               padding: 0;
+               &::before {
+                  display: none !important;
+               }
+            }
+         }
+      }
+   }
    .table_container {
       //   .btn_gragient {
       //      margin-top: 165px !important;
@@ -618,12 +661,9 @@
       padding-right: 0 !important;
       .slick_arrow {
          content: "";
-         //  background-size: cover;
-         //  background-position: center;
-         //  background-repeat: no-repeat;
          position: absolute;
          top: 50%;
-         left: 19px;
+         left: 14px;
          z-index: 12;
          transform: translate(-50%, -50%);
          img {
@@ -642,6 +682,7 @@
       //      background: url(../img/Mobile_bg/arr_bottom.svg);
       //   }
       .slick-slide {
+         margin-bottom: 30px;
          border: none;
          position: relative;
          .table_slide_item {
@@ -752,6 +793,9 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
    .who_we {
       margin-bottom: 155px;
+   }
+   .table_wrapper .slick-slide {
+      margin-bottom: 31px !important;
    }
 }
 
