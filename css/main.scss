@@ -131,9 +131,10 @@ table {
 }
 
 body {
-   background: url(../img/Header/1_var.png);
+   background: url(../img/Footer/body.jpg);
+   background-position-x: center;
    scroll-behavior: smooth;
-   padding-bottom: 60px;
+   //    padding-bottom: 60px;
    &::-webkit-scrollbar {
       z-index: 999999999999999999999999999999999999 !important;
       background: #043f4f !important;
@@ -896,8 +897,8 @@ nav {
       position: absolute;
       top: 0;
       right: 5%;
-      width: 650px;
-      height: 555px;
+      width: 358px;
+      height: 296px;
    }
 }
 
@@ -1012,17 +1013,125 @@ nav {
       }
    }
 }
-// .mySwiper {
-//    .swiper-slide {
-//       width: 369px;
-//       height: 422px;
-//    }
-//    .slick_arrow {
-//       z-index: 10;
-//       display: inline-block !important;
-//       position: absolute;
-//    }
-// }
 
-.slider_exemple {
+.about_slider {
+   background: url(../img/Footer/brain.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.roadmap {
+   padding-top: 110px;
+   width: 100%;
+   background: url(../img/Footer/footer_bg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   .container {
+      max-width: 1110px;
+      text-align: center;
+      .title {
+         margin-bottom: 0;
+      }
+      .footer_city {
+         max-width: 100%;
+         max-height: 388px;
+         margin: 0 auto 0 0;
+      }
+      .roadmap_list {
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         flex-direction: column;
+         &::before {
+            content: "";
+            display: inline-block;
+            background: url(../img/Footer/line_for_dates.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 4px;
+            width: 945px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+         .roadmap_item {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            .roadmap_item_info {
+               max-width: 185px;
+               text-align: left;
+            }
+            &::before {
+               content: "";
+               display: inline-block;
+               width: 22px;
+               height: 40px;
+               background: url(../img/Footer/dates_diamond.png);
+               background-size: cover;
+               background-position: center;
+               background-repeat: no-repeat;
+               position: relative;
+            }
+            .arrow_rotate {
+               .roadmap_item_img {
+                  transform: rotate(180deg);
+               }
+            }
+         }
+         .roadmap_item_title {
+            font-family: "Furore", sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #ffffff;
+         }
+         .roadmap_item_text {
+            margin: 19px auto 23px;
+            font-family: "Strong", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -14.87%,
+               #2dffd9 100.75%,
+               #54ffe0 60.54%,
+               #03776f 98.95%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+         }
+
+         .arrow_down_list {
+            transition: 0.5s;
+            cursor: pointer;
+            width: 110px;
+            height: 35px;
+            background: linear-gradient(
+               90.56deg,
+               rgba(5, 218, 201, 0.41) -3.66%,
+               rgba(0, 143, 163, 0.2) 49.48%,
+               rgba(0, 174, 164, 0.38) 100.28%
+            );
+            backdrop-filter: blur(25px);
+            border-radius: 8px;
+            border: 2px solid #01d1d5;
+            display: inline-block;
+            margin: auto;
+            .roadmap_item_img {
+               margin: 5px auto;
+               max-width: 30px;
+            }
+         }
+      }
+   }
 }

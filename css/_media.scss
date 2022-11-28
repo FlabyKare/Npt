@@ -531,11 +531,15 @@
       }
    }
    .plan-slider {
+      .slick-slide {
+         margin-right: 25px !important;
+      }
       .slick-dots {
-         bottom: -33px;
+         bottom: -45px;
          .slick-active {
             opacity: 1 !important;
          }
+
          li:nth-child(1) {
             background: url(../img/Mobile_bg/1_.png);
          }
@@ -751,6 +755,9 @@
          margin-bottom: 0 !important;
       }
    }
+   .roadmap_list {
+      flex-wrap: wrap;
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -788,6 +795,9 @@
          }
       }
    }
+   .roadmap_list {
+      flex-wrap: wrap;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -796,6 +806,9 @@
    }
    .table_wrapper .slick-slide {
       margin-bottom: 31px !important;
+   }
+   .roadmap_list {
+      flex-wrap: wrap;
    }
 }
 
@@ -815,6 +828,354 @@
    .who_we {
       margin-bottom: 155px;
    }
+}
+
+//? Анимации
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 1400px) {
+   .dron {
+      animation: dronAnimate 3s infinite alternate;
+   }
+   .footer_city {
+      animation: footerCity 5s infinite alternate;
+   }
+   @keyframes footerCity {
+      0% {
+         opacity: 0.75;
+         transform: scale(0.98);
+      }
+      100% {
+         opacity: 1;
+         transform: scale(1);
+      }
+   }
+
+   @keyframes dronAnimate {
+      0% {
+         transform: translate(0, 6%);
+      }
+      100% {
+         transform: translate(0, -1%);
+      }
+   }
+}
+
+@media (min-width: 768px) {
+}
+// Footer
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+   .roadmap_wrapper {
+      overflow-x: hidden;
+   }
+   .footer_city {
+      margin: -41px auto 0 -102% !important;
+      max-width: fit-content !important;
+   }
+   .roadmap_list {
+      gap: 50px;
+      width: fit-content;
+      margin: auto;
+      &::before {
+         transform: rotate(90deg) !important;
+         width: 650px !important;
+         top: 340px !important;
+         left: -313px !important;
+      }
+      .roadmap_item {
+         align-items: center;
+         width: 305px !important;
+         &::before {
+            align-self: start !important;
+            margin-right: 30px;
+         }
+         .roadmap_item_text {
+            margin: 15px 0 0 0 !important;
+         }
+         .arrow_down_list {
+            width: 65px !important;
+            transform: rotate(-90deg);
+            margin: 0 0 0 auto !important;
+            img {
+               max-width: 25px !important;
+               margin: 7px auto !important;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+   .roadmap_list {
+      flex-direction: row !important;
+   }
+   .roadmap_item {
+      flex-direction: column;
+      &::before {
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+   .max_170px {
+      max-width: 170px !important;
+   }
+   .max_140px {
+      max-width: 140px !important;
+   }
+   .roadmap_item_info {
+      h6,
+      p {
+         text-align: center !important;
+      }
+   }
+}
+
+@media (min-width: 1400px) {
+   .roadmap_list {
+      flex-direction: row !important;
+   }
+   .roadmap_item {
+      flex-direction: column;
+      &::before {
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+   .max_170px {
+      max-width: 170px !important;
+   }
+   .max_140px {
+      max-width: 140px !important;
+   }
+   .roadmap_item_info {
+      h6,
+      p {
+         text-align: center !important;
+      }
+   }
+}
+@media (min-width: 576px) and (max-width: 1199.98px) {
+   .roadmap_list {
+      gap: 50px;
+      width: fit-content;
+      margin: auto;
+      &::before {
+         transform: rotate(90deg) !important;
+         width: 650px !important;
+         top: 340px !important;
+         left: -313px !important;
+      }
+      .roadmap_item {
+         align-items: center;
+         width: 405px !important;
+         &::before {
+            align-self: start !important;
+            margin-right: 30px;
+         }
+         .roadmap_item_text {
+            margin: 15px 0 0 0 !important;
+         }
+         .arrow_down_list {
+            width: 60px !important;
+            transform: rotate(-90deg);
+            margin: 0 0 0 auto !important;
+            img {
+               max-width: 25px !important;
+               margin: 7px auto !important;
+            }
+         }
+      }
+   }
+}
+// Intro
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+// Intro
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+@media (min-width: 1400px) {
 }
 
 // Intro

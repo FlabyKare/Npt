@@ -128,3 +128,10 @@ $(".plan-slider").slick({
       },
    ],
 });
+
+const footerCityButtons = document.querySelectorAll(".arrow_down_list");
+for (let footerBtnRotate of footerCityButtons) {
+   footerBtnRotate.addEventListener("click", () => {
+      footerBtnRotate.classList.toggle("arrow_rotate");
+   });
+}
