@@ -2358,7 +2358,7 @@ nav ul {
 .roadmap_before_slider_item_info_whiteText {
   font-family: "Strong", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
   text-transform: lowercase;
   color: #ffffff;
@@ -2374,9 +2374,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
 }
-.roadmap_before_slider .roadmap_before_slider_item1 {
-  max-width: 261px;
-  max-height: 289px;
+.roadmap_before_slider * {
+  text-align: left;
 }
 .roadmap_before_slider .roadmap_before_slider_item {
   position: relative;
@@ -2385,6 +2384,19 @@ nav ul {
   width: 100%;
   height: 100%;
 }
+.roadmap_before_slider .roadmap_before_slider_item .close_svg {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  opacity: 0.26;
+}
+.roadmap_before_slider .roadmap_before_slider_item .close_svg:hover {
+  opacity: 0.8;
+}
+.roadmap_before_slider .roadmap_before_slider_item .close_svg:hover path {
+  fill: #51ffdf;
+}
 .roadmap_before_slider .roadmap_before_slider_item .roadmap_before_slider_item_info {
   position: absolute;
   top: 50%;
@@ -2392,11 +2404,12 @@ nav ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  padding: 53px 19px 30px 18px;
+  padding: 53px 25px 30px 26px;
 }
 .roadmap_before_slider .roadmap_before_slider_item .roadmap_before_slider_item_info .roadmap_item_text {
-  margin: 10px auto 7px;
+  margin: 5px auto;
 }
-.roadmap_before_slider .roadmap_before_slider_item * {
-  text-align: left;
+.roadmap_before_slider .roadmap_before_slider_item1 {
+  max-width: 261px;
+  max-height: 289px;
 }
