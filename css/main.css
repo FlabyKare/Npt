@@ -2366,36 +2366,52 @@ nav ul {
 
 .roadmap_before_slider {
   position: absolute;
-  top: 50%;
+  top: 39%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .roadmap_before_slider * {
   text-align: left;
 }
 .roadmap_before_slider .roadmap_before_slider_item {
   position: relative;
+  max-width: 261px;
+  max-height: 289px;
 }
 .roadmap_before_slider .roadmap_before_slider_item img {
   width: 100%;
   height: 100%;
 }
-.roadmap_before_slider .roadmap_before_slider_item .close_svg {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+.roadmap_before_slider .roadmap_before_slider_item svg {
   cursor: pointer;
   opacity: 0.26;
+  position: absolute;
+  z-index: 1;
 }
-.roadmap_before_slider .roadmap_before_slider_item .close_svg:hover {
-  opacity: 0.8;
+.roadmap_before_slider .roadmap_before_slider_item svg:hover {
+  opacity: 1;
 }
-.roadmap_before_slider .roadmap_before_slider_item .close_svg:hover path {
-  fill: #51ffdf;
+.roadmap_before_slider .roadmap_before_slider_item svg:hover path {
+  fill: #00b292;
+}
+.roadmap_before_slider .roadmap_before_slider_item .close_svg {
+  top: 25px;
+  right: 25px;
+}
+.roadmap_before_slider .roadmap_before_slider_item .left_arrow {
+  bottom: 27px;
+  left: 30px;
+}
+.roadmap_before_slider .roadmap_before_slider_item .right_arrow {
+  bottom: 27px;
+  right: 30px;
 }
 .roadmap_before_slider .roadmap_before_slider_item .roadmap_before_slider_item_info {
   position: absolute;
@@ -2404,12 +2420,16 @@ nav ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  padding: 53px 25px 30px 26px;
+  padding: 53px 25px 0px 26px;
+  min-height: 245px;
 }
 .roadmap_before_slider .roadmap_before_slider_item .roadmap_before_slider_item_info .roadmap_item_text {
   margin: 5px auto;
 }
-.roadmap_before_slider .roadmap_before_slider_item1 {
-  max-width: 261px;
+.roadmap_before_slider .roadmap_before_slider_item6 {
+  max-width: 460px;
   max-height: 289px;
+}
+.roadmap_before_slider .roadmap_before_slider_item6 .roadmap_before_slider_item_info {
+  padding: 53px 35px 0px 35px;
 }

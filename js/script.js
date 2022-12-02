@@ -135,3 +135,52 @@ for (let footerBtnRotate of footerCityButtons) {
       footerBtnRotate.classList.toggle("arrow_rotate");
    });
 }
+
+// Footer "Слайдер"
+
+var i = 0;
+document.getElementById("forward").onclick = function () {
+   document.getElementsByTagName("div")[i].classList.remove("footer_item_show");
+   if (i == 3) {
+      i = 0;
+   } else {
+      i++;
+   }
+   document.getElementsByTagName("div")[i].classList.add("footer_item_show");
+};
+document.getElementById("back").onclick = function () {
+   document.getElementsByTagName("li")[i].classList.remove("footer_item_show");
+   if (i == 0) {
+      i = 3;
+   } else {
+      i--;
+   }
+   document.getElementsByTagName("li")[i].classList.add("footer_item_show");
+};
+
+const left_arrow = document.querySelectorAll(".left_arrow");
+const right_arrow = document.querySelectorAll(".right_arrow");
+
+for (let left of left_arrow) {
+   left.addEventListener("click", () => {
+      document.getElementsByTagName("li") [i].classList.remove("footer_item_show");
+      if (i == 0) {
+         i = 6;
+      } else {
+         i--;
+      }
+      document.getElementsByTagName("li")[i].classList.add("footer_item_show");
+   });
+}
+
+for (let right of right_arrow) {
+   right.addEventListener("click", () => {
+      document.getElementsByTagName("li")[i].classList.remove("footer_item_show");
+      if (i == 0) {
+         i = 6;
+      } else {
+         i--;
+      }
+      document.getElementsByTagName("li")[i].classList.add("footer_item_show");
+   });
+}
