@@ -1080,11 +1080,11 @@ nav {
                background-repeat: no-repeat;
                position: relative;
             }
-            .arrow_rotate {
-               .roadmap_item_img {
-                  transform: rotate(180deg);
-               }
-            }
+            // .arrow_rotate {
+            //    .roadmap_item_img {
+            //       transform: rotate(180deg);
+            //    }
+            // }
          }
 
          .arrow_down_list {
@@ -1158,11 +1158,13 @@ nav {
    width: max-content;
    * {
       text-align: left;
+      transition: 0.5s;
    }
    .roadmap_before_slider_item {
       position: relative;
       max-width: 261px;
       max-height: 289px;
+      display: none;
       img {
          width: 100%;
          height: 100%;
@@ -1214,4 +1216,11 @@ nav {
          padding: 53px 35px 0px 35px;
       }
    }
+}
+
+.roadmap_before_slider_item_show {
+   display: inline-block !important;
+}
+.footerArrowHide {
+   display: none !important;
 }
