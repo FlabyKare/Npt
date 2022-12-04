@@ -129,67 +129,67 @@ $(".plan-slider").slick({
    ],
 });
 
-const footerCityButtons = document.querySelectorAll(".arrow_down_list");
-// for (let footerBtnRotate of footerCityButtons) {
-//    footerBtnRotate.addEventListener("click", () => {
-//       footerBtnRotate.classList.toggle("arrow_rotate");
-//    });
-// }
-
 // Footer "Слайдер"
 
 const left_arrow = document.querySelectorAll(".left_arrow");
 const right_arrow = document.querySelectorAll(".right_arrow");
-const roadmapSliderItem = document.querySelectorAll(".roadmap_before_slider_item");
+const roadmapSliderItemClose = document.querySelectorAll(".close_svg");
+const roadmapSliderItem = document.querySelectorAll(
+   ".roadmap_before_slider_item"
+);
 const footerArrows = document.querySelectorAll(".arrow_down_list");
 const roadmapBeforeSlider = document.querySelector(".roadmap_before_slider");
 function roadmapSliderItemClear() {
-   roadmapSliderItem.forEach((roadmapSliderItem) => {
-      roadmapSliderItem.classList.remove("roadmap_before_slider_item_show");
-   });
-}
-for (let left of left_arrow) {
-   left.addEventListener("click", () => {
-      for (let i = 0; i <= left_arrow.length; i++) {
-         (function (index) {
-            left_arrow[i].addEventListener("click", () => {
-               roadmapSliderItemClear();
-               if (index >= 1) {
-                  roadmapSliderItem[index - 1].classList.add("roadmap_before_slider_item_show");
-               }
-            });
-         })(i);
-      }
+   roadmapSliderItem.forEach((roadmapItem) => {
+      roadmapItem.classList.remove("roadmap_before_slider_item_show");
    });
 }
 
-for (let right of right_arrow) {
-   right.addEventListener("click", () => {
-      for (let i = 0; i < right_arrow.length; i++) {
-         (function (index) {
-            right_arrow[i].addEventListener("click", () => {
-               roadmapSliderItemClear();
-               if (index <= 5) {
-                  roadmapSliderItem[index + 1].classList.add("roadmap_before_slider_item_show");
-               }
-            });
-         })(i);
-      }
-   });
+for (let i = 0; i < left_arrow.length; i++) {
+   (function (index) {
+      left_arrow[index].addEventListener("click", () => {
+         roadmapSliderItemClear();
+         roadmapSliderItem[index].classList.toggle(
+            "roadmap_before_slider_item_show"
+         );
+      });
+   })(i);
+}
+
+for (let i = 0; i < right_arrow.length; i++) {
+   (function (index) {
+      right_arrow[i].addEventListener("click", () => {
+         roadmapSliderItemClear();
+         if (index <= 5) {
+            roadmapSliderItem[index + 1].classList.toggle(
+               "roadmap_before_slider_item_show"
+            );
+         }
+      });
+   })(i);
 }
 
 for (let counter = 0; counter < footerArrows.length; counter++) {
    (function (index) {
       footerArrows[counter].addEventListener("click", () => {
          console.log("Стрелка номер: " + index);
-         
+
          footerArrows.forEach((footerArrow) => {
             footerArrow.classList.add("footerArrowHide");
          });
 
-         roadmapSliderItem[index].classList.add(
+         roadmapSliderItem[index].classList.toggle(
             "roadmap_before_slider_item_show"
          );
       });
    })(counter);
+}
+
+for (let close of roadmapSliderItemClose) {
+   close.addEventListener("click", () => {
+      roadmapSliderItemClear();
+      footerArrows.forEach((footerArrow) => {
+         footerArrow.classList.remove("footerArrowHide");
+      });
+   });
 }
