@@ -1126,9 +1126,9 @@
   .roadmap_list::before {
     -webkit-transform: rotate(90deg) !important;
             transform: rotate(90deg) !important;
-    width: 650px !important;
-    top: 347px !important;
-    left: -315px !important;
+    width: 680px !important;
+    top: 349px !important;
+    left: -331px !important;
   }
   .m-top250 {
     margin-top: 85px !important;
