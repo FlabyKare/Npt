@@ -137,6 +137,7 @@ const roadmapSliderItemClose = document.querySelectorAll(".close_svg");
 const roadmapSliderItem = document.querySelectorAll(
    ".roadmap_before_slider_item"
 );
+const roadmapList = document.querySelector(".roadmap_list");
 const footerArrows = document.querySelectorAll(".arrow_down_list");
 const roadmapBeforeSlider = document.querySelector(".roadmap_before_slider");
 function roadmapSliderItemClear() {
@@ -172,12 +173,10 @@ for (let i = 0; i < right_arrow.length; i++) {
 for (let counter = 0; counter < footerArrows.length; counter++) {
    (function (index) {
       footerArrows[counter].addEventListener("click", () => {
-         console.log("Стрелка номер: " + index);
-
+         roadmapList.classList.add("m-top250", "m-top300");
          footerArrows.forEach((footerArrow) => {
             footerArrow.classList.add("footerArrowHide");
          });
-
          roadmapSliderItem[index].classList.toggle(
             "roadmap_before_slider_item_show"
          );
@@ -187,6 +186,7 @@ for (let counter = 0; counter < footerArrows.length; counter++) {
 
 for (let close of roadmapSliderItemClose) {
    close.addEventListener("click", () => {
+      roadmapList.classList.remove("m-top250", "m-top300");
       roadmapSliderItemClear();
       footerArrows.forEach((footerArrow) => {
          footerArrow.classList.remove("footerArrowHide");
