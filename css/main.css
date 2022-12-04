@@ -1127,8 +1127,9 @@
     -webkit-transform: rotate(90deg) !important;
             transform: rotate(90deg) !important;
     width: 683px !important;
+    height: 5px !important;
     top: 361px !important;
-    left: -333px !important;
+    left: -332px !important;
   }
   .m-top250 {
     margin-top: 85px !important;
