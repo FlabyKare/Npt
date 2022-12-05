@@ -6,9 +6,6 @@
   .body_hiden {
     display: none !important;
   }
-  body {
-    padding-bottom: 37px !important;
-  }
   .main_header_wrapper nav {
     padding-top: 42px;
   }
@@ -46,9 +43,6 @@
   }
   .body_hiden {
     display: none !important;
-  }
-  body {
-    padding-bottom: 37px !important;
   }
   .main_header_wrapper nav {
     padding-top: 42px;
