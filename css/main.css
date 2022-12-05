@@ -657,6 +657,41 @@
     max-width: 987px !important;
     position: inherit;
   }
+  .table_wrapper .slick-slide .img2022 {
+    min-height: 210px !important;
+    max-height: 210px !important;
+    margin: 75px auto 0;
+  }
+  .table_wrapper .slick-slide .table_slide_item1 .prev {
+    top: 68%;
+  }
+  .table_wrapper .slick-slide .table_slide_item1 .next {
+    top: 75%;
+  }
+  .table_wrapper .slick-slide .table_slide_item2 .prev {
+    top: 68%;
+  }
+  .table_wrapper .slick-slide .table_slide_item2 .next {
+    top: 75%;
+  }
+  .table_wrapper .slick-slide .table_slide_item3 .prev {
+    top: 68%;
+  }
+  .table_wrapper .slick-slide .table_slide_item3 .next {
+    top: 75%;
+  }
+  .table_wrapper .slick-slide .table_slide_item4 .prev {
+    top: 68%;
+  }
+  .table_wrapper .slick-slide .table_slide_item4 .next {
+    top: 75%;
+  }
+  .table_wrapper .slick-slide .table_slide_item5 .prev {
+    top: 83%;
+  }
+  .table_wrapper .slick-slide .table_slide_item5 .next {
+    top: 92%;
+  }
   .table_wrapper .slick-active {
     display: block !important;
   }
@@ -694,6 +729,11 @@
     max-width: 990px !important;
     position: inherit;
   }
+  .table_wrapper .img2022 {
+    min-height: 210px !important;
+    max-height: 210px !important;
+    margin: 35px auto 0 !important;
+  }
   .why_wrapper h3 br {
     display: none !important;
   }
@@ -729,15 +769,35 @@
     max-width: 990px !important;
     position: inherit;
   }
+  .table_wrapper .img2022 {
+    min-height: 210px !important;
+    max-height: 210px !important;
+    margin: 35px auto 0 !important;
+  }
+  .table_wrapper .table_slide_item1 .prev,
+.table_wrapper .table_slide_item2 .prev,
+.table_wrapper .table_slide_item3 .prev,
+.table_wrapper .table_slide_item4 .prev {
+    top: 68%;
+  }
+  .table_wrapper .table_slide_item1 .next,
+.table_wrapper .table_slide_item2 .next,
+.table_wrapper .table_slide_item3 .next,
+.table_wrapper .table_slide_item4 .next {
+    top: 78% !important;
+  }
+  .table_wrapper .table_slide_item5 .prev {
+    top: 78% !important;
+  }
+  .table_wrapper .table_slide_item5 .next {
+    top: 91% !important;
+  }
   .table_wrapper .slick_arrow {
     left: 14px !important;
   }
   .table_wrapper .prev {
     -webkit-transform: translate(0%, -75px) !important;
             transform: translate(0%, -75px) !important;
-  }
-  .table_wrapper .last_slide_item .slick_arrow {
-    left: 19px !important;
   }
   .roadmap_list {
     -ms-flex-wrap: wrap;
@@ -1627,7 +1687,7 @@ table {
 }
 
 body {
-  background: url(../img/Footer/body.jpg);
+  background: url(../img/Header/1_bg.jpg);
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;

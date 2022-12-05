@@ -679,12 +679,6 @@
             min-height: 4px !important;
          }
       }
-      //   .prev {
-      //      background: url(../img/Mobile_bg/arr_up.svg);
-      //   }
-      //   .next {
-      //      background: url(../img/Mobile_bg/arr_bottom.svg);
-      //   }
       .slick-slide {
          margin-bottom: 30px;
          border: none;
@@ -697,6 +691,51 @@
             max-height: 322px;
             max-width: 987px !important;
             position: inherit;
+         }
+         .img2022 {
+            min-height: 210px !important;
+            max-height: 210px !important;
+            margin: 75px auto 0;
+         }
+         .table_slide_item1 {
+            .prev {
+               top: 68%;
+            }
+            .next {
+               top: 75%;
+            }
+         }
+         .table_slide_item2 {
+            .prev {
+               top: 68%;
+            }
+            .next {
+               top: 75%;
+            }
+         }
+         .table_slide_item3 {
+            .prev {
+               top: 68%;
+            }
+            .next {
+               top: 75%;
+            }
+         }
+         .table_slide_item4 {
+            .prev {
+               top: 68%;
+            }
+            .next {
+               top: 75%;
+            }
+         }
+         .table_slide_item5 {
+            .prev {
+               top: 83%;
+            }
+            .next {
+               top: 92%;
+            }
          }
       }
       .slick-active {
@@ -737,6 +776,12 @@
          max-height: 270px !important;
          max-width: 990px !important;
          position: inherit;
+      }
+
+      .img2022 {
+         min-height: 210px !important;
+         max-height: 210px !important;
+         margin: 35px auto 0 !important;
       }
    }
    .why_wrapper {
@@ -783,16 +828,35 @@
          max-width: 990px !important;
          position: inherit;
       }
+      .img2022 {
+         min-height: 210px !important;
+         max-height: 210px !important;
+         margin: 35px auto 0 !important;
+      }
+      .table_slide_item1,
+      .table_slide_item2,
+      .table_slide_item3,
+      .table_slide_item4 {
+         .prev {
+            top: 68%;
+         }
+         .next {
+            top: 78% !important;
+         }
+      }
+      .table_slide_item5 {
+         .prev {
+            top: 78% !important;
+         }
+         .next {
+            top: 91% !important;
+         }
+      }
       .slick_arrow {
          left: 14px !important;
       }
       .prev {
          transform: translate(0%, -75px) !important;
-      }
-      .last_slide_item {
-         .slick_arrow {
-            left: 19px !important;
-         }
       }
    }
    .roadmap_list {

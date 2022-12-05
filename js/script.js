@@ -173,7 +173,7 @@ for (let i = 0; i < right_arrow.length; i++) {
 for (let counter = 0; counter < footerArrows.length; counter++) {
    (function (index) {
       footerArrows[counter].addEventListener("click", () => {
-         roadmapList.classList.add("m-top250", "m-top300");
+         roadmapList.classList.add("m-top250");
          footerArrows.forEach((footerArrow) => {
             footerArrow.classList.add("footerArrowHide");
          });
