@@ -688,10 +688,10 @@
     top: 75%;
   }
   .table_wrapper .slick-slide .table_slide_item5 .prev {
-    top: 83%;
+    top: 69%;
   }
   .table_wrapper .slick-slide .table_slide_item5 .next {
-    top: 92%;
+    top: 75%;
   }
   .table_wrapper .slick-active {
     display: block !important;
@@ -788,10 +788,10 @@
     top: 78% !important;
   }
   .table_wrapper .table_slide_item5 .prev {
-    top: 78% !important;
+    top: 70% !important;
   }
   .table_wrapper .table_slide_item5 .next {
-    top: 91% !important;
+    top: 78% !important;
   }
   .table_wrapper .slick_arrow {
     left: 14px !important;
@@ -1689,16 +1689,15 @@ table {
 
 body {
   background: url(../img/Header/1_bg.jpg);
-  background-position-x: center;
+  background-position-x: inherit;
   background-repeat: no-repeat;
   background-size: cover;
   scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   z-index: 999999999999999900000000000000000000 !important;
-  background: #043f4f !important;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background: #0a1318 !important;
+  width: 15px;
 }
 body::-webkit-scrollbar-track {
   z-index: 999999999999999900000000000000000000 !important;
@@ -1707,7 +1706,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   z-index: 999999999999999900000000000000000000 !important;
-  background: #03677f !important;
+  background: #1ee5c1 !important;
   cursor: pointer !important;
 }
 body::-webkit-scrollbar-button {
@@ -1838,6 +1837,10 @@ body::-webkit-scrollbar-button {
   stroke-dashoffset: -90;
 }
 
+.mainHeader_active {
+  overflow: hidden;
+}
+
 .menu_wrapper {
   width: 0px;
   position: fixed;
@@ -1848,6 +1851,7 @@ body::-webkit-scrollbar-button {
   background: url(../img/Header/mobile_Menu_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
@@ -2543,7 +2547,6 @@ nav ul {
 }
 
 .roadmap {
-  padding-top: 110px;
   width: 100%;
   background: url(../img/Footer/footer_bg.png);
   background-size: cover;

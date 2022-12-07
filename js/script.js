@@ -1,4 +1,4 @@
-// Preloader
+//!    Preloader
 
 window.onload = function () {
    document.body.classList.add("loaded_hiding");
@@ -8,7 +8,7 @@ window.onload = function () {
    }, 500);
 };
 
-// Menu button
+//!   Menu button
 
 const button = document.querySelector(".btn_menu");
 
@@ -28,7 +28,8 @@ const menu_wrapper = document.querySelector(".menu_wrapper");
 const menu_close = document.querySelector(".closeMenu");
 const body_hidden = document.querySelectorAll(".body_hide");
 const menuLinks = document.querySelectorAll(".menu_link");
-
+const mainHeader = document.querySelector(".main_header_wrapper");
+const body = document.querySelector("body");
 function btn_animation() {
    const currentState = button.getAttribute("data-state");
    if (!currentState || currentState === "opened") {
@@ -38,20 +39,23 @@ function btn_animation() {
 }
 const menuWrapper = () => {
    menu_wrapper.classList.toggle("menu_active");
+   body.classList.toggle("mainHeader_active");
 };
-const appenedClasses = () => {
-   body_hidden.forEach((item) => {
-      item.classList.toggle("body_hiden");
-   });
-};
+// const appenedClasses = () => {
+//      body_hidden.forEach((item) => {
+//         item.classList.toggle("body_hiden");
+//      });
+// };
 
 function toggleMenu() {
    menuWrapper();
-   appenedClasses();
+//    appenedClasses();
 }
 
 menu_btn.addEventListener("click", toggleMenu);
-// menu_close.addEventListener("click", toggleMenu);
+
+//!   menu_close.addEventListener("click", toggleMenu);
+
 menuLinks.forEach((link) =>
    link.addEventListener("click", () => {
       toggleMenu();
@@ -59,8 +63,8 @@ menuLinks.forEach((link) =>
    })
 );
 
+//!   Плавный переход по "Якорным ссылкам"
 const anchors = document.querySelectorAll('a[href*="#"]');
-
 for (let anchor of anchors) {
    anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -82,19 +86,11 @@ $(".table_slider").slick({
    dots: false,
    slidesToShow: 1,
    infinite: false,
-   // autoplay: true,
-   //    appendArrows: ".slider-arrows",
-   //    prevArrow: '<img class="prev slick-arrow" src="/img/Mobile_bg/arr_up.svg">',
-   //    nextArrow:'<img class="next slick-arrow" src="/img/Mobile_bg/arr_bottom.svg">',
    prevArrow: $(".prev"),
    nextArrow: $(".next"),
-   //    responsive: [
-   //       {
-   //          breakpoint: 576,
-   //          settings: {},
-   //       },
-   //    ],
 });
+
+//!   Увеличение таблицы после нажатия
 
 const table = document.querySelector(".table_visible");
 const viewFull = document.querySelector(".view_full");
@@ -111,7 +107,7 @@ function removeActiveTable() {
    table.classList.remove(".table_active");
 }
 
-// Plan text slider
+//!    Plan text slider
 $(".plan-slider").slick({
    arrows: false,
    responsive: [
@@ -129,7 +125,7 @@ $(".plan-slider").slick({
    ],
 });
 
-// Footer "Слайдер"
+//!   Footer "Слайдер"
 
 const left_arrow = document.querySelectorAll(".left_arrow");
 const right_arrow = document.querySelectorAll(".right_arrow");
