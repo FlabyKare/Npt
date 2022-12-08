@@ -49,7 +49,7 @@ const menuWrapper = () => {
 
 function toggleMenu() {
    menuWrapper();
-//    appenedClasses();
+   //    appenedClasses();
 }
 
 menu_btn.addEventListener("click", toggleMenu);
@@ -119,7 +119,7 @@ $(".plan-slider").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: false,
-            autoplay: true,
+            // autoplay: true,
          },
       },
    ],

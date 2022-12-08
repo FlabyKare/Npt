@@ -514,6 +514,9 @@
    }
 }
 @media (max-width: 575.98px) {
+   .roadmap {
+      margin-top: 65px;
+   }
    .why_wrapper {
       .why_button {
          //  padding: 0 30px !important;
@@ -542,12 +545,6 @@
          }
          li:nth-child(3) {
             background: url(../img/Mobile_bg/3_.png);
-         }
-         li:nth-child(4) {
-            background: url(../img/Mobile_bg/4_.png);
-         }
-         li:nth-child(5) {
-            background: url(../img/Mobile_bg/5_.png);
          }
          li {
             width: 40px;
@@ -760,7 +757,16 @@
       padding-right: 0;
    }
 }
-
+@media (max-width: 339.98px) {
+   .plan-slider {
+      .slick-dots {
+         width: 102% !important;
+         li {
+            margin-top: 20px !important;
+         }
+      }
+   }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
    .desktopList {
       display: none !important;
