@@ -140,6 +140,9 @@ function roadmapSliderItemClear() {
    roadmapSliderItem.forEach((roadmapItem) => {
       roadmapItem.classList.remove("roadmap_before_slider_item_show");
    });
+   footerArrows.forEach((footerArrow) => {
+      footerArrow.classList.remove("rotate_arrow");
+   });
 }
 
 for (let i = 0; i < left_arrow.length; i++) {
@@ -149,6 +152,7 @@ for (let i = 0; i < left_arrow.length; i++) {
          roadmapSliderItem[index].classList.toggle(
             "roadmap_before_slider_item_show"
          );
+         footerArrows[index].classList.add("rotate_arrow");
       });
    })(i);
 }
@@ -157,6 +161,8 @@ for (let i = 0; i < right_arrow.length; i++) {
    (function (index) {
       right_arrow[i].addEventListener("click", () => {
          roadmapSliderItemClear();
+         footerArrows[index + 1].classList.add("rotate_arrow");
+
          if (index <= 5) {
             roadmapSliderItem[index + 1].classList.toggle(
                "roadmap_before_slider_item_show"
@@ -173,6 +179,7 @@ for (let counter = 0; counter < footerArrows.length; counter++) {
          footerArrows.forEach((footerArrow) => {
             footerArrow.classList.add("footerArrowHide");
          });
+         footerArrows[index].classList.add("rotate_arrow");
          roadmapSliderItem[index].classList.toggle(
             "roadmap_before_slider_item_show"
          );
@@ -185,7 +192,7 @@ for (let close of roadmapSliderItemClose) {
       roadmapList.classList.remove("m-top250", "m-top300");
       roadmapSliderItemClear();
       footerArrows.forEach((footerArrow) => {
-         footerArrow.classList.remove("footerArrowHide");
+         footerArrow.classList.remove("footerArrowHide", "rotate_arrow");
       });
    });
 }

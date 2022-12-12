@@ -1315,6 +1315,12 @@
     line-height: 27px !important;
   }
 }
+@media (min-width: 992px) {
+  .rotate_arrow img {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .footerArrowHide {
     display: inline-block !important;
@@ -1372,9 +1378,6 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .footerArrowHide {
-    display: none !important;
-  }
   .roadmap_list {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1428,9 +1431,6 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .footerArrowHide {
-    display: none !important;
-  }
   .roadmap_list {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -1461,9 +1461,6 @@
   }
 }
 @media (min-width: 1400px) {
-  .footerArrowHide {
-    display: none !important;
-  }
   .roadmap_list {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -2793,7 +2790,8 @@ nav ul {
 }
 
 .footerArrowHide {
-  display: none !important;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .links_footer {

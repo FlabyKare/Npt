@@ -1204,7 +1204,8 @@ nav {
    display: inline-block !important;
 }
 .footerArrowHide {
-   display: none !important;
+   opacity: 0.6;
+   pointer-events: none;
 }
 
 .links_footer {
