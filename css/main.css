@@ -1197,7 +1197,7 @@
     margin-top: 85px !important;
   }
   .roadmap_before_slider {
-    top: 27% !important;
+    top: 23% !important;
   }
   .roadmap_item {
     width: 100% !important;
@@ -2870,9 +2870,25 @@ nav ul {
   padding-top: 100px;
   overflow: hidden;
 }
+.links_footer * {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .links_footer .jar {
   position: relative;
   z-index: 0;
+}
+
+.footer_icon:hover,
+.jar:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.links_wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .links_footer_wrapper {
