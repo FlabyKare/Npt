@@ -842,7 +842,7 @@
     -webkit-animation: dronAnimate 3s infinite alternate;
             animation: dronAnimate 3s infinite alternate;
   }
-  .footer_city {
+  .footer_city, .jar {
     -webkit-animation: footerCity 5s infinite alternate;
             animation: footerCity 5s infinite alternate;
   }
@@ -2979,4 +2979,9 @@ nav ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.footer_city, .jar {
+  -webkit-animation: footerCity 3s infinite alternate;
+          animation: footerCity 3s infinite alternate;
 }

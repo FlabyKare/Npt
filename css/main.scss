@@ -1291,3 +1291,8 @@ nav {
    left: 50%;
    transform: translate(-50%, -50%);
 }
+
+
+.footer_city,.jar {
+    animation: footerCity 3s infinite alternate;
+ }
