@@ -984,13 +984,16 @@ nav {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+   .roadmap_wrapper {
+      .title {
+         margin-bottom: 0;
+      }
+   }
    .container {
       max-width: 1110px;
       text-align: center;
       position: relative;
-      .title {
-         margin-bottom: 0;
-      }
+
       .footer_city {
          max-width: 100%;
          max-height: 388px;
@@ -1210,12 +1213,67 @@ nav {
 
 .links_footer {
    width: 100%;
-   padding-top: 150px;
-   position: relative;
+   padding-top: 100px;
+   overflow: hidden;
    .jar {
       position: relative;
       z-index: 0;
-      width: 841px;
-      height: 915.16px;
    }
+}
+.links_footer_wrapper {
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   margin: auto;
+   width: fit-content;
+   h3 {
+      margin-bottom: 47px;
+   }
+}
+.footer_links {
+   display: flex;
+   gap: 30px;
+   height: fit-content;
+   flex-direction: column;
+   width: fit-content;
+}
+.footer_item {
+   display: flex;
+   gap: 25px;
+   align-items: center;
+   width: fit-content;
+}
+.footer_item_link {
+   min-width: 318px;
+   max-width: max-content;
+   width: min-content;
+
+   height: min-content;
+
+   position: relative;
+   display: inline-block;
+   transition: 0.5s;
+
+   &:hover {
+      opacity: 0.7;
+   }
+}
+.footer_link_bg {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.footer_link_text {
+   padding: 0 15px;
+   width: 100%;
+   font-family: "Strong", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   text-align: center;
+   color: #ffffff;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }

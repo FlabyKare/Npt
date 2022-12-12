@@ -82,7 +82,7 @@ for (let anchor of anchors) {
 
 $(".table_slider").slick({
    vertical: true,
-   verticalSwiping: true,
+   verticalSwiping: false,
    dots: false,
    slidesToShow: 1,
    infinite: false,

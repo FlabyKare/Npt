@@ -1083,10 +1083,6 @@
       overflow-x: hidden;
    }
    .roadmap {
-      .title {
-         font-size: 37px !important;
-         line-height: 40px !important;
-      }
       .container {
          overflow: hidden !important;
       }
@@ -1156,7 +1152,6 @@
       line-height: 20px !important;
    }
 }
-
 @media (min-width: 576px) and (max-width: 767.98px) {
    .roadmap {
       .title {
@@ -1218,12 +1213,12 @@
       line-height: 27px !important;
    }
 }
-@media (min-width: 992px){
-    .rotate_arrow{
-        img{
-            transform: rotate(-180deg);
-        }
-    }
+@media (min-width: 992px) {
+   .rotate_arrow {
+      img {
+         transform: rotate(-180deg);
+      }
+   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
    .footerArrowHide {
@@ -1278,7 +1273,6 @@
    }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
    .roadmap_list {
       flex-direction: row !important;
       gap: 40px;
@@ -1418,18 +1412,80 @@
       align-items: center;
    }
 }
-// Intro
 
+//! Footer jar
+@media (max-width: 1134.98px) {
+   .links_footer_wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+@media (min-width: 992px) {
+   .max992 {
+      display: none !important;
+   }
+}
+@media (max-width: 991.98px) {
+   .links_footer_wrapper {
+      flex-direction: column;
+   }
+
+   .max992 {
+      display: block !important;
+      margin-bottom: -40px !important;
+      padding-bottom: 0 !important;
+   }
+   .min992 {
+      display: none !important;
+   }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
+   .roadmap_wrapper {
+      h3 {
+         font-size: 28px !important;
+         text-align: left !important;
+         line-height: 37px !important;
+      }
+   }
+   .max992 {
+      margin-bottom: -15px !important;
+   }
+   .jar {
+      width: 100% !important;
+      height: auto !important;
+   }
+   .footer_item_link {
+      max-width: min-content !important;
+      min-width: 215px !important;
+      width: 100% !important;
+   }
+   .footer_link_text {
+      font-size: 13px !important;
+      line-height: 19px !important;
+   }
+   .footer_icon {
+      width: 30px !important;
+      height: 30px !important;
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .jar {
+      height: 600px !important;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .jar {
+      height: 600px !important;
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .jar {
+      width: auto;
+      height: 600px;
+   }
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {

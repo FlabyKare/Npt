@@ -1168,10 +1168,6 @@
   .roadmap_wrapper {
     overflow-x: hidden;
   }
-  .roadmap .title {
-    font-size: 37px !important;
-    line-height: 40px !important;
-  }
   .roadmap .container {
     overflow: hidden !important;
   }
@@ -1552,6 +1548,81 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media (max-width: 1134.98px) {
+  .links_footer_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  .max992 {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .links_footer_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .max992 {
+    display: block !important;
+    margin-bottom: -40px !important;
+    padding-bottom: 0 !important;
+  }
+  .min992 {
+    display: none !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .roadmap_wrapper h3 {
+    font-size: 28px !important;
+    text-align: left !important;
+    line-height: 37px !important;
+  }
+  .max992 {
+    margin-bottom: -15px !important;
+  }
+  .jar {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .footer_item_link {
+    max-width: -webkit-min-content !important;
+    max-width: -moz-min-content !important;
+    max-width: min-content !important;
+    min-width: 215px !important;
+    width: 100% !important;
+  }
+  .footer_link_text {
+    font-size: 13px !important;
+    line-height: 19px !important;
+  }
+  .footer_icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .jar {
+    height: 600px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .jar {
+    height: 600px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .jar {
+    width: auto;
+    height: 600px;
   }
 }
 html,
@@ -2555,13 +2626,13 @@ nav ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+.roadmap .roadmap_wrapper .title {
+  margin-bottom: 0;
+}
 .roadmap .container {
   max-width: 1110px;
   text-align: center;
   position: relative;
-}
-.roadmap .container .title {
-  margin-bottom: 0;
 }
 .roadmap .container .footer_city {
   max-width: 100%;
@@ -2796,12 +2867,100 @@ nav ul {
 
 .links_footer {
   width: 100%;
-  padding-top: 150px;
-  position: relative;
+  padding-top: 100px;
+  overflow: hidden;
 }
 .links_footer .jar {
   position: relative;
   z-index: 0;
-  width: 841px;
-  height: 915.16px;
+}
+
+.links_footer_wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.links_footer_wrapper h3 {
+  margin-bottom: 47px;
+}
+
+.footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.footer_item_link {
+  min-width: 318px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer_item_link:hover {
+  opacity: 0.7;
+}
+
+.footer_link_bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer_link_text {
+  padding: 0 15px;
+  width: 100%;
+  font-family: "Strong", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
