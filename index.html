@@ -34,6 +34,26 @@
         <div id="loader"></div>
     </div>
 
+    <ul class="popup">
+        <div class="popup_back_black"></div>
+
+        <form class="popup_wrapper" action="telegram.php" method="POST">
+            <h5>Связаться</h5>
+            <img class="close" width="35px" height="35px" src="img/close.png" alt="">
+
+            <input class="form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
+                minlength="4" maxlength="25">
+            <input class="form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
+                required>
+            <input class="user_text form-control form_input form_text" type="hidden" name="text" placeholder="Сообщение">
+            <textarea oninput="document.querySelector('#user_text').value = this.value;"
+                placeholder="Введите что-нибдуь"></textarea>
+            <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
+        </form>
+
+    </ul>
+
+
     <div class="table_visible">
         <img class="table_visible_item" src="img/Header/table.png" alt="">
     </div>
@@ -58,7 +78,7 @@
                         <li class="instagram hover_svg">
                             <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
                         </li>
-                        <li class=" hover_svg">
+                        <li class="popup_call hover_svg">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
                         </li>
                     </ul>
@@ -100,7 +120,7 @@
                             <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
 
                         </li>
-                        <li class=" hover_svg">
+                        <li class="popup_call hover_svg">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
 
                         </li>
@@ -313,7 +333,9 @@
     </section>
 
     <footer class="roadmap body_hide">
-        <img width="100%" src="img/Footer/Footer_line.png" alt="">
+        <img class="min768" width="100%" src="img/Footer/Footer_line.png" alt="">
+        <img class="max768" width="100%" src="img/Footer/Footer_Vector.png" alt="">
+
         <main class="roadmap_wrapper container">
             <h3 class="title">Можно посмотреть <span>road map?</span></h3>
             <img class="footer_city" src="img/Footer/footer_city.png" alt="">
@@ -603,6 +625,34 @@
                 </div>
 
             </main>
+        </section>
+
+        <section class="footer">
+            <div class="line">
+                <img src="img/Footer/line_for_bottom_footer.png" alt="">
+            </div>
+            <p>© Neural prediction technologies</p>
+            <!-- <ul>
+                <li>
+                    <img src="img/Header/telegram.png" alt="">
+                </li>
+            </ul> -->
+
+            <ul class="footer_png_wrapper">
+                <li class="hover_svg">
+                    <a href="https://t.me/MeMuslim1">
+                        <img width="30px" height="30px" src="img/Header/telegram.png" alt="">
+                    </a>
+                </li>
+                <li class="hover_svg">
+                    <a href="https://www.instagram.com/webmaster_____/">
+                        <img width="30px" height="30px" src="img/Header/instagram.png" alt="">
+                    </a>
+                </li>
+                <li class="popup_call hover_svg">
+                    <img width="32px" height="23px" src="img/Header/email.png" alt="">
+                </li>
+            </ul>
         </section>
     </footer>
 
