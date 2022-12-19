@@ -351,9 +351,10 @@ body {
          font-family: sans-serif !important;
          font-size: 15px;
          line-height: 130%;
-         text-align: left;
          color: #284983;
          background: #fff;
+         text-align: left;
+
          &:focus {
             &::placeholder {
                opacity: 0;
@@ -400,6 +401,18 @@ body {
          border: 1px #00ffe4 solid;
 
          height: 150px;
+         font-weight: 600;
+         font-family: sans-serif !important;
+         font-size: 15px;
+         line-height: 130%;
+         color: #284983;
+         &::placeholder {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 130%;
+            text-align: left;
+            color: #aba8a8;
+         }
       }
    }
 }
@@ -492,9 +505,6 @@ body {
    stroke-dashoffset: -90;
 }
 
-.mainHeader_active {
-   overflow: hidden;
-}
 // Menu wrapper
 
 .menu_wrapper {

@@ -114,6 +114,13 @@
    }
 }
 
+//* Menu_ bodyHide
+@media (max-width: 767.98px) {
+   .mainHeader_active {
+      overflow: hidden;
+   }
+}
+
 // Header
 
 @media (min-width: 320px) and (max-width: 575.98px) {

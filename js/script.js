@@ -41,20 +41,14 @@ const menuWrapper = () => {
    menu_wrapper.classList.toggle("menu_active");
    body.classList.toggle("mainHeader_active");
 };
-// const appenedClasses = () => {
-//      body_hidden.forEach((item) => {
-//         item.classList.toggle("body_hiden");
-//      });
-// };
 
 function toggleMenu() {
    menuWrapper();
-   //    appenedClasses();
 }
 
-menu_btn.addEventListener("click", toggleMenu);
-
-//!   menu_close.addEventListener("click", toggleMenu);
+menu_btn.addEventListener("click", () => {
+   toggleMenu();
+});
 
 menuLinks.forEach((link) =>
    link.addEventListener("click", () => {

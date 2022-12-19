@@ -136,6 +136,11 @@
     max-width: 450px;
   }
 }
+@media (max-width: 767.98px) {
+  .mainHeader_active {
+    overflow: hidden;
+  }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
   .third .subtitle_container {
     position: relative;
@@ -2140,9 +2145,9 @@ body::-webkit-scrollbar-button {
   font-family: sans-serif !important;
   font-size: 15px;
   line-height: 130%;
-  text-align: left;
   color: #284983;
   background: #fff;
+  text-align: left;
 }
 .popup.active form .form_input:focus::-webkit-input-placeholder {
   opacity: 0;
@@ -2226,6 +2231,46 @@ body::-webkit-scrollbar-button {
   border-radius: 25px;
   border: 1px #00ffe4 solid;
   height: 150px;
+  font-weight: 600;
+  font-family: sans-serif !important;
+  font-size: 15px;
+  line-height: 130%;
+  color: #284983;
+}
+.popup.active form textarea::-webkit-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: left;
+  color: #aba8a8;
+}
+.popup.active form textarea::-moz-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: left;
+  color: #aba8a8;
+}
+.popup.active form textarea:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: left;
+  color: #aba8a8;
+}
+.popup.active form textarea::-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: left;
+  color: #aba8a8;
+}
+.popup.active form textarea::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-align: left;
+  color: #aba8a8;
 }
 
 .popup {
@@ -2314,10 +2359,6 @@ body::-webkit-scrollbar-button {
 .button-three[aria-expanded=true] .line {
   stroke-dasharray: 60 105 60 300;
   stroke-dashoffset: -90;
-}
-
-.mainHeader_active {
-  overflow: hidden;
 }
 
 .menu_wrapper {
