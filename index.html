@@ -41,13 +41,13 @@
             <h5>Связаться</h5>
             <img class="close" width="35px" height="35px" src="img/close.png" alt="">
 
-            <input class="form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
+            <input class="popup_item_value form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
                 minlength="4" maxlength="25">
-            <input class="form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
+            <input class="popup_item_value form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
                 required>
-            <input class="user_text form-control form_input form_text" type="hidden" name="text"
+            <input class="popup_item_value user_text form-control form_input form_text" type="hidden" name="text"
                 placeholder="Сообщение">
-            <textarea oninput="document.querySelector('.user_text').value = this.value;"
+            <textarea class="popup_item_value " oninput="document.querySelector('.user_text').value = this.value;"
                 placeholder="Введите что-нибдуь"></textarea>
             <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
         </form>

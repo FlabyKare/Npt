@@ -198,6 +198,8 @@ const popupBackBlack = document.querySelector(".popup_back_black");
 const popup = document.querySelector(".popup");
 const popupWrapper = document.querySelector(".popup_wrapper");
 const close = document.querySelector(".close");
+const popupItemValues = document.querySelectorAll(".popup_item_value");
+
 let bodyWidth = document.body.clientWidth;
 const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_tel");
@@ -205,6 +207,9 @@ const email = document.querySelector(".form_site");
 
 function popupActive() {
    popup.classList.toggle("active");
+   popupItemValues.forEach((popupItemValuesNull) => {
+      popupItemValuesNull.value = "";
+   });
 }
 popupBackBlack.addEventListener("click", () => {
    popupActive();
