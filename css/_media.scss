@@ -1,7 +1,6 @@
 //* Popup
 
-
-@media (max-height: 939.98px) {
+@media (max-height: 599.98px) {
    .popup_wrapper {
       overflow-y: scroll;
       //   border-top-right-radius: 0 !important;
@@ -26,6 +25,7 @@
          background: #fff;
          border-radius: 60px;
       }
+      height: 90% !important;
    }
 }
 @media (min-width: 320px) and (max-width: 575.98px) {
@@ -1188,6 +1188,9 @@
    }
 }
 @media (max-width: 767.98px) {
+   .footer_line_min768 {
+      display: none !important;
+   }
    .min768 {
       display: none !important;
    }
@@ -1196,6 +1199,9 @@
    }
 }
 @media (min-width: 768px) {
+   .footer_line_max768 {
+      display: none !important;
+   }
    .max768 {
       display: none !important;
    }
@@ -1395,6 +1401,9 @@
    }
 }
 @media (max-width: 991.98px) {
+   .line {
+      margin-top: 75px;
+   }
    .roadmap_before_slider {
       width: max-content !important;
    }
@@ -1566,6 +1575,7 @@
       display: none !important;
    }
 }
+
 @media (min-width: 320px) and (max-width: 575.98px) {
    .roadmap_wrapper {
       h3 {

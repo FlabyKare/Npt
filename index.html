@@ -45,8 +45,9 @@
                 minlength="4" maxlength="25">
             <input class="form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
                 required>
-            <input class="user_text form-control form_input form_text" type="hidden" name="text" placeholder="Сообщение">
-            <textarea oninput="document.querySelector('#user_text').value = this.value;"
+            <input class="user_text form-control form_input form_text" type="hidden" name="text"
+                placeholder="Сообщение">
+            <textarea oninput="document.querySelector('.user_text').value = this.value;"
                 placeholder="Введите что-нибдуь"></textarea>
             <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
         </form>
@@ -72,13 +73,17 @@
 
                 <div class="desktop">
                     <ul class="messengers desktop_messengers">
-                        <li class=" hover_svg">
-                            <img width="30px" height="26px" src="img/Header/telegram.png" alt="">
+                        <li class="menu_link hover_svg">
+                            <a href="https://t.me/MeMuslim1">
+                                <img width="30px" height="26px" src="img/Header/telegram.png" alt="">
+                            </a>
                         </li>
-                        <li class="instagram hover_svg">
-                            <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
+                        <li class="menu_link hover_svg inst">
+                            <a href="https://www.instagram.com/webmaster_____/">
+                                <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
+                            </a>
                         </li>
-                        <li class="popup_call hover_svg">
+                        <li class="menu_link popup_call hover_svg">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
                         </li>
                     </ul>
@@ -113,16 +118,18 @@
                     </div>
                     <img class="menu_line" src="img/Header/menu_line.png" alt="">
                     <ul class="messengers">
-                        <li class=" hover_svg">
-                            <img width="30px" height="26px" src="img/Header/telegram.png" alt="">
+                        <li class="menu_link hover_svg">
+                            <a href="https://t.me/MeMuslim1">
+                                <img width="30px" height="26px" src="img/Header/telegram.png" alt="">
+                            </a>
                         </li>
-                        <li class="instagram hover_svg">
-                            <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
-
+                        <li class="menu_link hover_svg inst">
+                            <a href="https://www.instagram.com/webmaster_____/">
+                                <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
+                            </a>
                         </li>
-                        <li class="popup_call hover_svg">
+                        <li class="menu_link popup_call hover_svg">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
-
                         </li>
                     </ul>
 
@@ -629,7 +636,8 @@
 
         <section class="footer">
             <div class="line">
-                <img src="img/Footer/line_for_bottom_footer.png" alt="">
+                <img class="footer_line_max768" src="img/Footer/line_for_bottom_footer_mobile.png" alt="">
+                <img class="footer_line_min768" src="img/Footer/line_for_bottom_footer.png" alt="">
             </div>
             <p>© Neural prediction technologies</p>
             <!-- <ul>

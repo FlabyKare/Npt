@@ -13,7 +13,6 @@ $arr = array(
   'Имя: ' => $name,
   'Телефон: ' => $phone,
   'Сообщение: ' => $text,
-
 );
 
 foreach($arr as $key => $value) {

@@ -83,6 +83,7 @@ for (let anchor of anchors) {
 $(".table_slider").slick({
    vertical: true,
    verticalSwiping: false,
+   swipe: false,
    dots: false,
    slidesToShow: 1,
    infinite: false,
@@ -208,9 +209,6 @@ const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_tel");
 const email = document.querySelector(".form_site");
 
-if (bodyWidth < 576) {
-   email.placeholder = "Мессенджер";
-}
 function popupActive() {
    popup.classList.toggle("active");
 }
