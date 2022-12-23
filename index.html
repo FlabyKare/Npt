@@ -41,10 +41,10 @@
             <h5>Связаться</h5>
             <img class="close" width="35px" height="35px" src="img/close.png" alt="">
 
-            <input class="popup_item_value form-control form_input form_name" type="text" name="name" placeholder="Ваше имя" required
-                minlength="4" maxlength="25">
-            <input class="popup_item_value form-control form_input form_tel tel" type="tel" name="phone" placeholder="+7 (XXX) XXX XX XX"
-                required>
+            <input class="popup_item_value form-control form_input form_name" type="text" name="name"
+                placeholder="Ваше имя" required minlength="4" maxlength="25">
+            <input class="popup_item_value form-control form_input form_tel tel" type="tel" name="phone"
+                placeholder="+7 (XXX) XXX XX XX" required>
             <input class="popup_item_value user_text form-control form_input form_text" type="hidden" name="text"
                 placeholder="Сообщение">
             <textarea class="popup_item_value " oninput="document.querySelector('.user_text').value = this.value;"
@@ -64,11 +64,13 @@
 
 
             <nav class="desktop_nav">
-                <img class="hover_svg logo" width="60px" height="25px" src="img/Header/logo.png" alt="">
+                <a class="logo_link" href="#">
+                    <img class="hover_svg logo" width="60px" height="25px" src="img/Header/logo.png" alt="">
+                </a>
                 <div class="links desktop_links">
                     <a class="nav_links" href="#">О нас</a>
                     <a class="nav_links" href="#">Как вступить?</a>
-                    <a class="nav_links" href="#">Контакты</a>
+                    <a class="nav_links" href="pages/contact.html">Контакты</a>
                 </div>
 
                 <div class="desktop">
@@ -112,7 +114,7 @@
                         <a class="menu_link closeMenu " href="#">
                             Как вступить?
                         </a>
-                        <a class="menu_link closeMenu " href="#">
+                        <a class="menu_link closeMenu " href="pages/contact.html">
                             Контакты
                         </a>
                     </div>
@@ -354,7 +356,7 @@
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.75 2.0125L15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125Z"
-                            fill="white" />
+                            fill="white" />  
                     </svg>
                     <div class="roadmap_before_slider_item_info">
                         <h6 class="roadmap_item_title">2019</h6>
@@ -609,21 +611,21 @@
                     <ul class="footer_links">
                         <li class="footer_item">
                             <img class="footer_icon" width="47px" height="47px" src="img/Footer/news.png" alt="">
-                            <a class="footer_item_link" href="#">
+                            <a class="footer_item_link" href="pages/news.html">
                                 <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
                                 <p class="footer_link_text">Подписаться на новости</p>
                             </a>
                         </li>
                         <li class="footer_item">
                             <img class="footer_icon" width="47px" height="47px" src="img/Footer/partner.png" alt="">
-                            <a class="footer_item_link" href="#">
+                            <a class="footer_item_link" href="pages/partner.html">
                                 <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
                                 <p class="footer_link_text">Стать инвестором партнером</p>
                             </a>
                         </li>
                         <li class="footer_item">
                             <img class="footer_icon" width="47px" height="47px" src="img/Footer/robot.png" alt="">
-                            <a class="footer_item_link" href="#">
+                            <a class="footer_item_link" href="pages/bot.html">
                                 <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
                                 <p class="footer_link_text">Протестировать бота!</p>
                             </a>
@@ -640,11 +642,6 @@
                 <img class="footer_line_min768" src="img/Footer/line_for_bottom_footer.png" alt="">
             </div>
             <p>© Neural prediction technologies</p>
-            <!-- <ul>
-                <li>
-                    <img src="img/Header/telegram.png" alt="">
-                </li>
-            </ul> -->
 
             <ul class="footer_png_wrapper">
                 <li class="hover_svg">

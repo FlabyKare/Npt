@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' ,content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='/css/main.css'>
+    <link rel='apple-touch-icon' sizes='180x180' href='/img/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='/img/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='/img/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='/img/favicon/site.webmanifest'>
+    <link rel='mask-icon' href='/img/favicon/safari-pinned-tab.svg' color='#5bbad5'>
+    <meta name='msapplication-TileColor' content='#2b5797'>
+    <meta name='theme-color' content='#ffffff'>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <title>Webmaster</title>
+</head>
+
+<body class="news">
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <ul class="popup">
+        <div class="popup_back_black"></div>
+
+        <form class="popup_wrapper" action="telegram.php" method="POST">
+            <h5>Связаться</h5>
+            <img class="close" width="35px" height="35px" src="/img/close.png" alt="">
+
+            <input class="popup_item_value form-control form_input form_name" type="text" name="name"
+                placeholder="Ваше имя" required minlength="4" maxlength="25">
+            <input class="popup_item_value form-control form_input form_tel tel" type="tel" name="phone"
+                placeholder="+7 (XXX) XXX XX XX" required>
+            <input class="popup_item_value user_text form-control form_input form_text" type="hidden" name="text"
+                placeholder="Сообщение">
+            <textarea class="popup_item_value " oninput="document.querySelector('.user_text').value = this.value;"
+                placeholder="Введите что-нибдуь"></textarea>
+            <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
+        </form>
+
+    </ul>
+    <img class="top_line" src="/img/Page_News/Top_Line.png" alt="">
+    <main class="main_header_wrapper container">
+
+
+        <nav class="desktop_nav">
+            <a class="logo_link" href="/index.html">
+                <img class="hover_svg logo" width="60px" height="25px" src="/img/Header/logo.png" alt="">
+            </a>
+            <div class="links desktop_links">
+                <a class="nav_links" href="#">О нас</a>
+                <a class="nav_links" href="#">Как вступить?</a>
+                <a class="nav_links" href="#">Контакты</a>
+            </div>
+
+            <div class="desktop">
+                <ul class="messengers desktop_messengers">
+                    <li class=" hover_svg">
+                        <a href="https://t.me/MeMuslim1">
+                            <img width="30px" height="26px" src="/img/Header/telegram.png" alt="">
+                        </a>
+                    </li>
+                    <li class=" hover_svg inst">
+                        <a href="https://www.instagram.com/webmaster_____/">
+                            <img width="26px" height="26px" src="/img/Header/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class=" popup_call hover_svg">
+                        <img width="32px" height="23px" src="/img/Header/email.png" alt="">
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="examples">
+                <!-- Svg Animate Button-->
+                <button class="button-three btn_menu" aria-controls="primary-navigation" aria-expanded="false">
+                    <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="60"
+                        height="60px">
+                        <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+
+            <section class="menu_wrapper">
+                <div class="links ">
+                    <a class="menu_link closeMenu " href="#last">
+                        О нас
+                    </a>
+                    <a class="menu_link closeMenu " href="#">
+                        Как вступить?
+                    </a>
+                    <a class="menu_link closeMenu " href="#">
+                        Контакты
+                    </a>
+                </div>
+                <img class="menu_line" src="/img/Header/menu_line.png" alt="">
+                <ul class="messengers">
+                    <li class="menu_link hover_svg">
+                        <a href="https://t.me/MeMuslim1">
+                            <img width="30px" height="26px" src="/img/Header/telegram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu_link hover_svg inst">
+                        <a href="https://www.instagram.com/webmaster_____/">
+                            <img width="26px" height="26px" src="/img/Header/instagram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu_link popup_call hover_svg">
+                        <img width="32px" height="23px" src="/img/Header/email.png" alt="">
+                    </li>
+                </ul>
+
+            </section>
+
+        </nav>
+
+    </main>
+
+    <section class="news_info container">
+        <h3 class="title">НОВОСТИ</h3>
+        <p class="defolt_P">Друзья мы сейчас полностью сосредоточены на написании кода, поэтому
+            не часто публикуем новости, но вы можете подписаться на нашу эмейл рассылку,
+            <span>чтобы не пропустить запуск проекта</span>
+        </p>
+        <a class="button">
+            <p>Подписаться</p>
+        </a>
+    </section>
+
+
+
+    <section class="footer">
+
+        <div class="line">
+            <img class="footer_line_min768" src="/img/Footer/line_for_bottom_footer.png" alt="">
+        </div>
+        <img class="footer_line_max768" src="/img/Footer/line_for_bottom_footer_mobile.png" alt="">
+        <p>© Neural prediction technologies</p>
+        <ul class="footer_png_wrapper">
+            <li class="hover_svg">
+                <a href="https://t.me/MeMuslim1">
+                    <img width="30px" height="30px" src="/img/Header/telegram.png" alt="">
+                </a>
+            </li>
+            <li class="hover_svg">
+                <a href="https://www.instagram.com/webmaster_____/">
+                    <img width="30px" height="30px" src="/img/Header/instagram.png" alt="">
+                </a>
+            </li>
+            <li class="popup_call hover_svg">
+                <img width="32px" height="23px" src="/img/Header/email.png" alt="">
+            </li>
+        </ul>
+    </section>
+
+
+    <script>
+        //!    Preloader
+
+        window.onload = function () {
+            document.body.classList.add("loaded_hiding");
+            window.setTimeout(function () {
+                document.body.classList.add("loaded");
+                document.body.classList.remove("loaded_hiding");
+            }, 500);
+        };
+
+
+        //* Popup
+
+        const popupBackBlack = document.querySelector(".popup_back_black");
+        const popup = document.querySelector(".popup");
+        const popupWrapper = document.querySelector(".popup_wrapper");
+        const close = document.querySelector(".close");
+        const popupItemValues = document.querySelectorAll(".popup_item_value");
+
+        let bodyWidth = document.body.clientWidth;
+        const name = document.querySelector(".form_name");
+        const phone = document.querySelector(".form_tel");
+        const email = document.querySelector(".form_site");
+
+        function popupActive() {
+            popup.classList.toggle("active");
+            popupItemValues.forEach((popupItemValuesNull) => {
+                popupItemValuesNull.value = "";
+            });
+        }
+        popupBackBlack.addEventListener("click", () => {
+            popupActive();
+        });
+        close.addEventListener("click", () => {
+            popupActive();
+        });
+
+        const emailIcons = document.querySelectorAll(".popup_call");
+        for (icon of emailIcons) {
+            icon.addEventListener("click", () => {
+                popupActive();
+            });
+        }
+
+        // маска ввода телефона
+
+        window.addEventListener("DOMContentLoaded", function () {
+            [].forEach.call(document.querySelectorAll(".tel"), function (input) {
+                var keyCode;
+                function mask(event) {
+                    event.keyCode && (keyCode = event.keyCode);
+                    var pos = this.selectionStart;
+                    if (pos < 3) event.preventDefault();
+                    var matrix = "+7 (___) ___ ____",
+                        i = 0,
+                        def = matrix.replace(/\D/g, ""),
+                        val = this.value.replace(/\D/g, ""),
+                        new_value = matrix.replace(/[_\d]/g, function (a) {
+                            return i < val.length ? val.charAt(i++) || def.charAt(i) : a;
+                        });
+                    i = new_value.indexOf("_");
+                    if (i != -1) {
+                        i < 5 && (i = 3);
+                        new_value = new_value.slice(0, i);
+                    }
+                    var reg = matrix
+                        .substr(0, this.value.length)
+                        .replace(/_+/g, function (a) {
+                            return "\\d{1," + a.length + "}";
+                        })
+                        .replace(/[+()]/g, "\\$&");
+                    reg = new RegExp("^" + reg + "$");
+                    if (
+                        !reg.test(this.value) ||
+                        this.value.length < 5 ||
+                        (keyCode > 47 && keyCode < 58)
+                    )
+                        this.value = new_value;
+                    if (event.type == "blur" && this.value.length < 17) this.value = "";
+                }
+
+                input.addEventListener("input", mask, false);
+                input.addEventListener("focus", mask, false);
+                input.addEventListener("blur", mask, false);
+                input.addEventListener("keydown", mask, false);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
