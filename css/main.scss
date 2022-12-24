@@ -1516,16 +1516,6 @@ nav {
 
 .footer {
    text-align: center;
-   p {
-      font-family: "Strong", sans-serif;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      text-transform: capitalize;
-      color: rgba(45, 255, 217, 0.26);
-      margin-top: 25px;
-   }
    .line {
       img {
          width: 100%;
@@ -1539,7 +1529,16 @@ nav {
       align-items: center;
    }
 }
-
+.footer_p {
+   font-family: "Strong", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   text-transform: capitalize;
+   color: rgba(45, 255, 217, 0.26);
+   margin-top: 25px;
+}
 //!  Page News
 
 .news {
@@ -1550,23 +1549,43 @@ nav {
    position: relative;
    height: 100vh;
    scroll-behavior: smooth;
-   .footer {
-      background: #000;
+
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   .footer_line_max768 {
+      width: 100% !important;
+   }
+   .top_line {
       position: absolute;
+      top: 0;
       left: 0;
-      bottom: 0;
       width: 100%;
-      p {
+   }
+   .main_container {
+      flex-grow: 1;
+   }
+   .footer {
+      flex-shrink: 0;
+      background: #000;
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: 0;
+      width: 100%;
+      margin-top: 160px;
+      .footer_p {
          margin-top: 65px;
+      }
+      .gradient_and_defolt_text {
+         max-width: 620px;
+         text-align: left;
       }
    }
 }
-.top_line {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
+.first_line_footer {
+   margin-top: -13px;
 }
+
 .defolt_P {
    font-family: "Strong", sans-serif;
    font-weight: 400;
@@ -1576,10 +1595,10 @@ nav {
    span {
       background: linear-gradient(
          92.3deg,
-         #00b292 -10.87%,
+         #00b292 -22.87%,
          #2dffd9 21.75%,
          #54ffe0 60.54%,
-         #03776f 98.95%
+         #03776f 179.95%
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1588,9 +1607,12 @@ nav {
       text-transform: uppercase;
    }
 }
+.mobile_footer_line {
+   height: 6px;
+}
 .news_info {
    .defolt_P {
-      max-width: 675px;
+      max-width: 750px;
       margin-top: 35px;
       margin-bottom: 45px;
    }
@@ -1602,10 +1624,13 @@ nav {
 .button {
    cursor: pointer;
    display: block;
+   text-decoration: none;
+
    background-image: url(../img/Page_News/btn.png);
-   background-size: cover;
+   background-size: 100% 100%;
    background-position: center;
    background-repeat: no-repeat;
+
    width: fit-content;
    height: fit-content;
    min-width: 208px;
@@ -1620,9 +1645,49 @@ nav {
       line-height: 24px;
       text-align: center;
       color: #ffffff;
+      padding: 0 20px;
       position: relative;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, 59%);
+      transform: translate(-50%, 65%);
+   }
+}
+.link_to_telegram_info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 65px;
+   padding-bottom: 70px;
+   .button {
+      background-image: url(../img/Page_News/btn_telegram.png);
+      background-size: 100% 100%;
+      width: fit-content;
+      height: fit-content;
+      min-width: 307px;
+      min-height: 57px;
+   }
+   p {
+      margin: 0 !important;
+   }
+}
+.gradient_and_defolt_text {
+   font-family: "Furore", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   text-transform: uppercase;
+   color: #ffffff;
+   span {
+      background: linear-gradient(
+         92.3deg,
+         #00b292 -10.87%,
+         #2dffd9 21.75%,
+         #54ffe0 60.54%,
+         #03776f 105.95%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
    }
 }
