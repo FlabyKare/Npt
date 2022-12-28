@@ -1677,6 +1677,27 @@
          line-height: 30px !important;
       }
    }
+   .contact {
+      .contact_info {
+         flex-wrap: wrap;
+      }
+      .col1 {
+         .contacts {
+            gap: 20px !important;
+         }
+         .email_mobile {
+            width: 30px !important;
+            height: 23px !important;
+         }
+         a {
+            font-size: 16px !important;
+         }
+      }
+      .title {
+         padding-bottom: 0 !important;
+         text-align: left !important;
+      }
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -1708,6 +1729,19 @@
          font-size: 20px !important;
          text-align: center !important;
          line-height: 30px !important;
+      }
+   }
+
+   .contact {
+      .contact_info {
+         flex-wrap: wrap;
+      }
+      .col1 {
+         padding-left: 15px;
+      }
+      .title {
+         padding-bottom: 0 !important;
+         text-align: left !important;
       }
    }
 }
