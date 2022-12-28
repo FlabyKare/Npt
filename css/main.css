@@ -1786,6 +1786,16 @@
     height: 600px;
   }
 }
+@media (max-width: 374.98px) {
+  .contact .col1 a {
+    font-size: 17px !important;
+  }
+}
+@media (min-width: 375px) and (max-width: 424.98px) {
+  .contact .col1 a {
+    font-size: 20px !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
   .news .footer_p {
     margin-top: 13px !important;
@@ -1833,9 +1843,6 @@
   .contact .col1 .email_mobile {
     width: 30px !important;
     height: 23px !important;
-  }
-  .contact .col1 a {
-    font-size: 16px !important;
   }
   .contact .title {
     padding-bottom: 0 !important;
