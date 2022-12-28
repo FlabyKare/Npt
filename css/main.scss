@@ -129,7 +129,6 @@ table {
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    transition: 0.35s;
 }
-
 body {
    background: url(../img/Header/1_bg.jpg);
    background-position-x: inherit;
@@ -376,6 +375,7 @@ body {
       textarea {
          /* = Убираем скролл */
          outline: none;
+         resize: none;
          overflow: auto;
          /* = Убираем увеличение */
          max-width: 100%;
@@ -404,6 +404,23 @@ body {
             line-height: 130%;
             text-align: left;
             color: #aba8a8;
+         }
+
+         //* Скролл
+
+         &::-webkit-scrollbar-track {
+         }
+
+         &::-webkit-scrollbar {
+            width: 6px;
+         }
+
+         &::-webkit-scrollbar-thumb {
+            border-radius: 100px;
+            background-color: #00ffe4;
+         }
+         &::-webkit-scrollbar-button {
+            display: none;
          }
       }
    }
@@ -1019,7 +1036,12 @@ nav {
    text-align: center;
    color: #ffffff;
 }
-
+@media (max-width: 767.98px) {
+   .text {
+      font-size: 16px !important;
+      text-align: left;
+   }
+}
 .balance {
    width: 869px;
    height: 385px;
@@ -1540,7 +1562,6 @@ nav {
    background-repeat: no-repeat !important;
    background-size: cover !important;
    position: relative;
-   height: 100vh;
    scroll-behavior: smooth;
 
    display: flex;
@@ -1555,9 +1576,7 @@ nav {
       left: 0;
       width: 100%;
    }
-   .main_container {
-      flex-grow: 1;
-   }
+
    .footer {
       flex-shrink: 0;
       background: #000;
@@ -1682,5 +1701,35 @@ nav {
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+   }
+}
+
+.flex_html,
+.flex_body {
+   height: 100%;
+}
+.flex_container {
+   flex: 1 1 auto;
+   //    min-height: 100%;
+}
+.flex_footer {
+   img {
+      width: 100%;
+   }
+}
+
+.content_wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.contact {
+   background: url(../img/Page_News/contact_bg.jpg) !important;
+   background-position: center !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   footer {
+      padding-bottom: 35px;
    }
 }

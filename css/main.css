@@ -2294,6 +2294,7 @@ body::-webkit-scrollbar-button {
 .popup.active form textarea {
   /* = Убираем скролл */
   outline: none;
+  resize: none;
   overflow: auto;
   /* = Убираем увеличение */
   max-width: 100%;
@@ -2349,6 +2350,16 @@ body::-webkit-scrollbar-button {
   line-height: 130%;
   text-align: left;
   color: #aba8a8;
+}
+.popup.active form textarea::-webkit-scrollbar {
+  width: 6px;
+}
+.popup.active form textarea::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #00ffe4;
+}
+.popup.active form textarea::-webkit-scrollbar-button {
+  display: none;
 }
 
 .popup {
@@ -2977,6 +2988,12 @@ nav ul {
   color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .text {
+    font-size: 16px !important;
+    text-align: left;
+  }
+}
 .balance {
   width: 869px;
   height: 385px;
@@ -3554,7 +3571,6 @@ nav ul {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  height: 100vh;
   scroll-behavior: smooth;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3573,11 +3589,6 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-}
-.news .main_container {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 .news .footer {
   -ms-flex-negative: 0;
@@ -3706,4 +3717,40 @@ nav ul {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.flex_html,
+.flex_body {
+  height: 100%;
+}
+
+.flex_container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.flex_footer img {
+  width: 100%;
+}
+
+.content_wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact {
+  background: url(../img/Page_News/contact_bg.jpg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.contact footer {
+  padding-bottom: 35px;
 }

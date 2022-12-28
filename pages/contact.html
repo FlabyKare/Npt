@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='en' class="flex_html">
 
 <head>
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' ,content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='/css/main.css'>
-    <link rel='apple-touch-icon' sizes='180x180' href='/img/favicon/apple-touch-icon.png'>
-    <link rel='icon' type='image/png' sizes='32x32' href='/img/favicon/favicon-32x32.png'>
-    <link rel='icon' type='image/png' sizes='16x16' href='/img/favicon/favicon-16x16.png'>
-    <link rel='manifest' href='/img/favicon/site.webmanifest'>
-    <link rel='mask-icon' href='/img/favicon/safari-pinned-tab.svg' color='#5bbad5'>
+    <link rel='stylesheet' href='../css/main.css'>
+    <link rel='apple-touch-icon' sizes='180x180' href='../img/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../img/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../img/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../img/favicon/site.webmanifest'>
+    <link rel='mask-icon' href='../img/favicon/safari-pinned-tab.svg' color='#5bbad5'>
     <meta name='msapplication-TileColor' content='#2b5797'>
     <meta name='theme-color' content='#ffffff'>
     <link rel='preconnect' href='https://fonts.googleapis.com'>
@@ -18,8 +18,8 @@
     <title>Webmaster</title>
 </head>
 
-<body class="contact">
 
+<body class="flex_body contact">
     <div id="preloader">
         <div id="loader"></div>
     </div>
@@ -29,7 +29,7 @@
 
         <form class="popup_wrapper" action="telegram.php" method="POST">
             <h5>Связаться</h5>
-            <img class="close" width="35px" height="35px" src="/img/close.png" alt="">
+            <img class="close" width="35px" height="35px" src="../img/close.png" alt="">
 
             <input class="popup_item_value form-control form_input form_name" type="text" name="name"
                 placeholder="Ваше имя" required minlength="4" maxlength="25">
@@ -43,89 +43,95 @@
         </form>
 
     </ul>
-    <main class="main_header_wrapper container">
-
-
-        <nav class="desktop_nav">
-            <a class="logo_link" href="/index.html">
-                <img class="hover_svg logo" width="60px" height="25px" src="/img/Header/logo.png" alt="">
-            </a>
-            <div class="links desktop_links">
-                <a class="nav_links" href="#">О нас</a>
-                <a class="nav_links" href="#">Как вступить?</a>
-                <a class="nav_links" href="#">Контакты</a>
-            </div>
-
-            <div class="desktop">
-                <ul class="messengers desktop_messengers">
-                    <li class=" hover_svg">
-                        <a href="https://t.me/MeMuslim1">
-                            <img width="30px" height="26px" src="/img/Header/telegram.png" alt="">
-                        </a>
-                    </li>
-                    <li class=" hover_svg inst">
-                        <a href="https://www.instagram.com/webmaster_____/">
-                            <img width="26px" height="26px" src="/img/Header/instagram.png" alt="">
-                        </a>
-                    </li>
-                    <li class=" popup_call hover_svg">
-                        <img width="32px" height="23px" src="/img/Header/email.png" alt="">
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <div class="examples">
-                <!-- Svg Animate Button-->
-                <button class="button-three btn_menu" aria-controls="primary-navigation" aria-expanded="false">
-                    <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="60"
-                        height="60px">
-                        <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
-                            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
-                        </path>
-                    </svg>
-                </button>
-            </div>
-
-
-            <section class="menu_wrapper">
-                <div class="links ">
-                    <a class="menu_link closeMenu " href="#last">
-                        О нас
+    <div class="content_wrapper">
+        <div class="flex_container">
+            <main class="main_header_wrapper container">
+                <nav class="desktop_nav">
+                    <a class="logo_link" href="../index.html">
+                        <img class="hover_svg logo" width="60px" height="25px" src="../img/Header/logo.png" alt="">
                     </a>
-                    <a class="menu_link closeMenu " href="#">
-                        Как вступить?
-                    </a>
-                    <a class="menu_link closeMenu " href="#">
-                        Контакты
-                    </a>
-                </div>
-                <img class="menu_line" src="/img/Header/menu_line.png" alt="">
-                <ul class="messengers">
-                    <li class="menu_link hover_svg">
-                        <a href="https://t.me/MeMuslim1">
-                            <img width="30px" height="26px" src="/img/Header/telegram.png" alt="">
-                        </a>
-                    </li>
-                    <li class="menu_link hover_svg inst">
-                        <a href="https://www.instagram.com/webmaster_____/">
-                            <img width="26px" height="26px" src="/img/Header/instagram.png" alt="">
-                        </a>
-                    </li>
-                    <li class="menu_link popup_call hover_svg">
-                        <img width="32px" height="23px" src="/img/Header/email.png" alt="">
-                    </li>
-                </ul>
+                    <div class="links desktop_links">
+                        <a class="nav_links" href="#">О нас</a>
+                        <a class="nav_links" href="#">Как вступить?</a>
+                        <a class="nav_links" href="#">Контакты</a>
+                    </div>
 
-            </section>
+                    <div class="desktop">
+                        <ul class="messengers desktop_messengers">
+                            <li class=" hover_svg">
+                                <a href="https://t.me/MeMuslim1">
+                                    <img width="30px" height="26px" src="../img/Header/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li class=" hover_svg inst">
+                                <a href="https://www.instagram.com/webmaster_____/">
+                                    <img width="26px" height="26px" src="../img/Header/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class=" popup_call hover_svg">
+                                <img width="32px" height="23px" src="../img/Header/email.png" alt="">
+                            </li>
+                        </ul>
 
-        </nav>
-    </main>
+                    </div>
 
 
+                    <div class="examples">
+                        <!-- Svg Animate Button-->
+                        <button class="button-three btn_menu" aria-controls="primary-navigation" aria-expanded="false">
+                            <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
+                                width="60" height="60px">
+                                <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                                    d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
 
 
+                    <section class="menu_wrapper">
+                        <div class="links ">
+                            <a class="menu_link closeMenu " href="#last">
+                                О нас
+                            </a>
+                            <a class="menu_link closeMenu " href="#">
+                                Как вступить?
+                            </a>
+                            <a class="menu_link closeMenu " href="#">
+                                Контакты
+                            </a>
+                        </div>
+                        <img class="menu_line" src="../img/Header/menu_line.png" alt="">
+                        <ul class="messengers">
+                            <li class="menu_link hover_svg">
+                                <a href="https://t.me/MeMuslim1">
+                                    <img width="30px" height="26px" src="../img/Header/telegram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="menu_link hover_svg inst">
+                                <a href="https://www.instagram.com/webmaster_____/">
+                                    <img width="26px" height="26px" src="../img/Header/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li class="menu_link popup_call hover_svg">
+                                <img width="32px" height="23px" src="../img/Header/email.png" alt="">
+                            </li>
+                        </ul>
+
+                    </section>
+
+                </nav>
+
+            </main>
+
+        </div>
+        <footer class="flex_footer footer">
+            <img class="footer_line_min768" src="../img/Footer/line_for_bottom_footer.png" alt="">
+            <img class="footer_line_max768 mobile_footer_mtop" src="../img/Footer/line_for_bottom_footer_mobile.png"
+                alt="">
+            <p class="footer_p">© Neural prediction technologies</p>
+        </footer>
+    </div>
 
 
 
@@ -140,8 +146,6 @@
                 document.body.classList.remove("loaded_hiding");
             }, 500);
         };
-
-
         //* Popup
 
         const popupBackBlack = document.querySelector(".popup_back_black");
@@ -223,12 +227,6 @@
 
 
 
-
-
-
-
-
-    <script src='/js/script.js'></script>
 </body>
 
 </html>
