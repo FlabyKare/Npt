@@ -1796,6 +1796,66 @@
     font-size: 20px !important;
   }
 }
+@media (max-width: 767.98px) {
+  .contact .footer_png_wrapper {
+    margin-bottom: 22px !important;
+  }
+  footer {
+    padding-bottom: 0 !important;
+  }
+}
+@media (min-width: 768px) {
+  .contact .footer_png_wrapper {
+    display: none !important;
+  }
+}
+@media (max-width: 419.98px) {
+  .partner .h1 {
+    font-size: 38px !important;
+  }
+  .partner .h1 span {
+    font-size: 38px !important;
+  }
+  .partner .cards_wrapper_item_title {
+    font-size: 21px !important;
+  }
+  .partner .header_container .info_wrapper {
+    margin-top: 44px !important;
+  }
+  .partner .header_container .btns {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+@media (min-width: 420px) and (max-width: 575.98px) {
+  .partner .header_container .info_wrapper {
+    margin-top: 44px !important;
+  }
+  .partner .header_container .btns {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    -webkit-box-pack: inherit !important;
+        -ms-flex-pack: inherit !important;
+            justify-content: inherit !important;
+  }
+  .partner .h1 {
+    font-size: 40px !important;
+  }
+  .partner .h1 span {
+    font-size: 40px !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 575.98px) {
   .news .footer_p {
     margin-top: 13px !important;
@@ -1844,12 +1904,154 @@
     width: 30px !important;
     height: 23px !important;
   }
+  .contact .col1 .title {
+    margin-bottom: 25px !important;
+  }
   .contact .title {
     padding-bottom: 0 !important;
     text-align: left !important;
   }
+  .partner .desktop_nav {
+    padding-bottom: 0 !important;
+  }
+  .partner .h1 {
+    text-align: left !important;
+    line-height: 46px !important;
+  }
+  .partner .h1 span {
+    text-transform: uppercase;
+    background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 130.95%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+  }
+  .partner .btns {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .partner .footer_container {
+    background-size: auto 100%;
+    padding-top: 70px !important;
+    padding-bottom: 0 !important;
+  }
+  .partner .footer_container .cards_wrapper {
+    gap: 45px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item {
+    width: 100%;
+    margin: auto;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .footer_line_max768 {
+    width: 100% !important;
+    height: auto !important;
+    margin: 17px auto 24px;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .green_text {
+    margin-top: 0 !important;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .text {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .button p {
+    font-size: 14px !important;
+  }
+  .partner .link_to_telegram {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partner .link_to_telegram p {
+    text-align: left !important;
+  }
+  .partner .link_to_telegram p span {
+    display: block;
+    margin-bottom: 25px !important;
+  }
+  .partner .link_to_telegram .button {
+    margin: auto auto auto 0;
+    width: 100% !important;
+  }
+  .partner .link_to_telegram .button p {
+    text-align: center !important;
+    font-size: 16px !important;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .partner .desktop_nav {
+    padding-bottom: 0 !important;
+  }
+  .partner .h1 {
+    text-align: left !important;
+    font-size: 40px !important;
+    line-height: 46px !important;
+  }
+  .partner .h1 span {
+    font-size: 40px !important;
+    text-transform: uppercase;
+    background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 130.95%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+  }
+  .partner .btns {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .partner .footer_container {
+    background-size: auto 100%;
+    padding-top: 70px !important;
+    padding-bottom: 0 !important;
+  }
+  .partner .footer_container .cards_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item {
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important;
+    min-width: 477px;
+    margin: auto;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item img {
+    width: 270px !important;
+    height: 270px !important;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .footer_line_max768 {
+    width: 100% !important;
+    height: auto !important;
+    margin: 17px auto 24px;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .green_text {
+    margin-top: 0 !important;
+  }
+  .partner .footer_container .cards_wrapper .cards_wrapper_item .text {
+    font-size: 19px !important;
+    text-align: center !important;
+  }
+  .partner .link_to_telegram {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partner .link_to_telegram p {
+    text-align: left !important;
+  }
+  .partner .link_to_telegram p span {
+    display: block;
+    margin-bottom: 25px !important;
+  }
+  .partner .link_to_telegram .button {
+    margin: auto auto auto 0;
+  }
   .news .footer_p {
     margin-top: 13px !important;
   }
@@ -1892,8 +2094,79 @@
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .partner .h1 {
+    font-size: 40px !important;
+    line-height: 46px !important;
+  }
+  .partner .h1 span {
+    font-size: 40px !important;
+    text-transform: uppercase;
+    background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 130.95%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+  }
+  .partner .footer_container {
+    background-size: auto 100%;
+    padding-top: 70px !important;
+    padding-bottom: 0 !important;
+  }
+  .partner .link_to_telegram .link_to_telegram_info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px !important;
+  }
+  .partner .link_to_telegram .gradient_and_defolt_text {
+    text-align: left !important;
+    min-width: 530px;
+  }
+  .partner .link_to_telegram .gradient_and_defolt_text span {
+    display: block;
+  }
+  .partner .link_to_telegram .button {
+    margin: auto auto auto 0;
+  }
+  .cards_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards_wrapper .cards_wrapper_item {
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important;
+    min-width: 477px;
+    margin: auto;
+  }
+  .cards_wrapper .cards_wrapper_item img {
+    width: 270px !important;
+    height: 270px !important;
+  }
+  .cards_wrapper .cards_wrapper_item .text {
+    font-size: 19px !important;
+  }
   .link_to_telegram_info .button {
     margin-left: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer_container {
+    background-size: auto 100%;
+    padding-top: 70px !important;
+    padding-bottom: 0 !important;
+  }
+  .cards_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 35px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .cards_wrapper .cards_wrapper_item {
+    min-width: 477px;
+  }
+  .cards_wrapper .cards_wrapper_item .text {
+    font-size: 19px !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -1902,12 +2175,20 @@
   }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  .cards_wrapper_item:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
   .news .top_line {
     position: absolute;
     top: 10% !important;
   }
 }
 @media (min-width: 1400px) {
+  .cards_wrapper_item:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
   .news .top_line {
     position: absolute;
     top: 4% !important;
@@ -2659,20 +2940,21 @@ nav ul {
   opacity: 0.6;
 }
 
-.info {
-  text-align: left;
-  padding-bottom: 446px;
-}
-.info .info_wrapper {
-  max-width: 610px;
-}
-.info h1 {
+.h1 {
   font-family: "Furore", sans-serif;
   font-weight: 400;
   font-size: 75px;
   line-height: 86px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.info {
+  text-align: left;
+  padding-bottom: 446px;
+}
+.info .info_wrapper {
+  max-width: 610px;
 }
 .info span {
   font-family: "Strong", sans-serif;
@@ -3776,7 +4058,7 @@ nav ul {
 }
 
 .content_wrapper {
-  height: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3872,16 +4154,115 @@ nav ul {
             transform: rotate(360deg);
   }
 }
-@media (max-width: 767.98px) {
-  .contact .footer_png_wrapper {
-    margin-bottom: 22px !important;
-  }
-  footer {
-    padding-bottom: 0 !important;
-  }
+.partner {
+  background: #091317 !important;
 }
-@media (min-width: 768px) {
-  .contact .footer_png_wrapper {
-    display: none;
-  }
+.partner .h1 span {
+  font-family: "Furore", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 75px;
+  text-transform: uppercase;
+  background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 98.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
+  background-clip: text;
+  text-fill-color: #fff;
+}
+.partner .desktop_nav {
+  padding-bottom: 160px;
+}
+.partner .header_container {
+  background-image: url(../img/Page_News/Partner/Header_bg.png);
+  background-size: cover 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-origin: content-box;
+}
+.partner .header_container .info {
+  padding-bottom: 120px;
+}
+.partner .header_container .info .info_wrapper {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.partner .header_container .info .info_wrapper .text {
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+.partner .header_container .text {
+  text-align: left;
+}
+.partner .link_to_telegram_info {
+  gap: 30px;
+}
+
+.footer_container {
+  background-image: url(../img/Page_News/Partner/Footer_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.footer_container .footer_png_wrapper {
+  margin-bottom: 36px;
+}
+.footer_container .footer {
+  margin-top: 75px;
+}
+.footer_container .cards_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer_container .cards_wrapper .cards_wrapper_item {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-image: url(../img/Page_News/Partner/card_bg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 530px;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 60px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.footer_container .cards_wrapper .cards_wrapper_item .cards_wrapper_item_title {
+  font-family: "Furore", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 98.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.footer_container .cards_wrapper .cards_wrapper_item .green_text {
+  margin-top: 38px;
+  margin-bottom: 20px;
+  font-family: "Strong", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: lowercase;
+  background: linear-gradient(92.3deg, #00b292 -10.87%, #2dffd9 21.75%, #54ffe0 60.54%, #03776f 98.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.footer_container .cards_wrapper .cards_wrapper_item .button {
+  margin: auto;
 }

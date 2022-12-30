@@ -1641,19 +1641,79 @@
 
 //! Page " News "
 @media (max-width: 374.98px) {
-    .contact {
-       .col1 {
-          a {
-             font-size: 17px !important;
-          }
-       }
-    }
- }
+   .contact {
+      .col1 {
+         a {
+            font-size: 17px !important;
+         }
+      }
+   }
+}
 @media (min-width: 375px) and (max-width: 424.98px) {
    .contact {
       .col1 {
          a {
             font-size: 20px !important;
+         }
+      }
+   }
+}
+@media (max-width: 767.98px) {
+   .contact {
+      .footer_png_wrapper {
+         margin-bottom: 22px !important;
+      }
+   }
+   footer {
+      padding-bottom: 0 !important;
+   }
+}
+@media (min-width: 768px) {
+   .contact {
+      .footer_png_wrapper {
+         display: none !important;
+      }
+   }
+}
+@media (max-width: 419.98px) {
+   .partner {
+      .h1 {
+         font-size: 38px !important;
+         span {
+            font-size: 38px !important;
+         }
+      }
+      .cards_wrapper_item_title {
+         font-size: 21px !important;
+      }
+      .header_container {
+         .info_wrapper {
+            margin-top: 44px !important;
+         }
+         .btns {
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+         }
+      }
+   }
+}
+@media (min-width: 420px) and (max-width: 575.98px) {
+   .partner {
+      .header_container {
+         .info_wrapper {
+            margin-top: 44px !important;
+         }
+         .btns {
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            justify-content: inherit !important;
+         }
+      }
+      .h1 {
+         font-size: 40px !important;
+         span {
+            font-size: 40px !important;
          }
       }
    }
@@ -1706,15 +1766,181 @@
             width: 30px !important;
             height: 23px !important;
          }
+         .title {
+            margin-bottom: 25px !important;
+         }
       }
       .title {
          padding-bottom: 0 !important;
          text-align: left !important;
       }
    }
+   .partner {
+      //   .header_container {
+      //     .info_wrapper{
+      //         margin-top: 44px !important;
+      //     }
+      //      .btns {
+      //         flex-direction: row !important;
+      //         flex-wrap: wrap !important;
+      //         justify-content: center !important;
+      //      }
+      //   }
+      .desktop_nav {
+         padding-bottom: 0 !important;
+      }
+      .h1 {
+         text-align: left !important;
+         line-height: 46px !important;
+         span {
+            text-transform: uppercase;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -10.87%,
+               #2dffd9 21.75%,
+               #54ffe0 60.54%,
+               #03776f 130.95%
+            ) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            text-fill-color: transparent !important;
+         }
+      }
+      .btns {
+         justify-content: start !important;
+      }
+      .footer_container {
+         background-size: auto 100%;
+         padding-top: 70px !important;
+         padding-bottom: 0 !important;
+         .cards_wrapper {
+            gap: 45px;
+            flex-wrap: wrap;
+            .cards_wrapper_item {
+               width: 100%;
+               margin: auto;
+               img {
+                  width: 100% !important;
+                  height: auto !important;
+               }
+               .footer_line_max768 {
+                  width: 100% !important;
+                  height: auto !important;
+                  margin: 17px auto 24px;
+               }
+               .green_text {
+                  margin-top: 0 !important;
+               }
+               .text {
+                  font-size: 16px !important;
+                  text-align: center !important;
+               }
+
+               .button {
+                  p {
+                     font-size: 14px !important;
+                  }
+               }
+            }
+         }
+      }
+      .link_to_telegram {
+         flex-wrap: wrap;
+         p {
+            text-align: left !important;
+            span {
+               display: block;
+               margin-bottom: 25px !important;
+            }
+         }
+         .button {
+            margin: auto auto auto 0;
+            width: 100% !important;
+            p {
+               text-align: center !important;
+               font-size: 16px !important;
+            }
+         }
+      }
+   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+   .partner {
+      .desktop_nav {
+         padding-bottom: 0 !important;
+      }
+      .h1 {
+         text-align: left !important;
+         font-size: 40px !important;
+         line-height: 46px !important;
+         span {
+            font-size: 40px !important;
+            text-transform: uppercase;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -10.87%,
+               #2dffd9 21.75%,
+               #54ffe0 60.54%,
+               #03776f 130.95%
+            ) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            text-fill-color: transparent !important;
+         }
+      }
+      .btns {
+         justify-content: start !important;
+      }
+      .footer_container {
+         background-size: auto 100%;
+         padding-top: 70px !important;
+         padding-bottom: 0 !important;
+         .cards_wrapper {
+            //   gap: 45px;
+            flex-wrap: wrap;
+            //   margin-top: 100px !important;
+            .cards_wrapper_item {
+               transform: scale(0.9) !important;
+
+               min-width: 477px;
+               margin: auto;
+               img {
+                  width: 270px !important;
+                  height: 270px !important;
+               }
+               .footer_line_max768 {
+                  width: 100% !important;
+                  height: auto !important;
+                  margin: 17px auto 24px;
+               }
+               .green_text {
+                  margin-top: 0 !important;
+               }
+               .text {
+                  font-size: 19px !important;
+                  text-align: center !important;
+               }
+            }
+         }
+      }
+      .link_to_telegram {
+         flex-wrap: wrap;
+         p {
+            text-align: left !important;
+            span {
+               display: block;
+               margin-bottom: 25px !important;
+            }
+         }
+         .button {
+            margin: auto auto auto 0;
+         }
+      }
+   }
+
    .news {
       .footer_p {
          margin-top: 13px !important;
@@ -1761,6 +1987,69 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+   .partner {
+      .h1 {
+         font-size: 40px !important;
+         line-height: 46px !important;
+         span {
+            font-size: 40px !important;
+            text-transform: uppercase;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -10.87%,
+               #2dffd9 21.75%,
+               #54ffe0 60.54%,
+               #03776f 130.95%
+            ) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: text !important;
+            text-fill-color: transparent !important;
+         }
+      }
+      .footer_container {
+         background-size: auto 100%;
+         padding-top: 70px !important;
+         padding-bottom: 0 !important;
+      }
+      .link_to_telegram {
+         .link_to_telegram_info {
+            flex-wrap: wrap;
+
+            gap: 30px !important;
+         }
+         .gradient_and_defolt_text {
+            text-align: left !important;
+            min-width: 530px;
+            span {
+               display: block;
+               //    margin-bottom: 25px !important;
+            }
+         }
+         .button {
+            margin: auto auto auto 0;
+         }
+      }
+   }
+
+   .cards_wrapper {
+      //   gap: 45px;
+      flex-wrap: wrap;
+      //   margin-top: 100px !important;
+      .cards_wrapper_item {
+         transform: scale(0.9) !important;
+
+         min-width: 477px;
+         margin: auto;
+         img {
+            width: 270px !important;
+            height: 270px !important;
+         }
+         .text {
+            font-size: 19px !important;
+         }
+      }
+   }
    .link_to_telegram_info {
       .button {
          margin-left: 30px;
@@ -1769,6 +2058,24 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   .footer_container {
+      background-size: auto 100%;
+      padding-top: 70px !important;
+      padding-bottom: 0 !important;
+   }
+   .cards_wrapper {
+      // flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+      transform: scale(0.9);
+
+      .cards_wrapper_item {
+         min-width: 477px;
+         .text {
+            font-size: 19px !important;
+         }
+      }
+   }
 }
 @media (max-width: 1199.98px) {
    .news .top_line {
@@ -1776,6 +2083,11 @@
    }
 }
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+   .cards_wrapper_item {
+      &:hover {
+         transform: scale(1.01);
+      }
+   }
    .news .top_line {
       position: absolute;
       top: 10% !important;
@@ -1783,6 +2095,11 @@
 }
 
 @media (min-width: 1400px) {
+   .cards_wrapper_item {
+      &:hover {
+         transform: scale(1.01);
+      }
+   }
    .news .top_line {
       position: absolute;
       top: 4% !important;

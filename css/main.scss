@@ -665,21 +665,21 @@ nav {
       opacity: 0.6;
    }
 }
-
+.h1 {
+   font-family: "Furore", sans-serif;
+   font-weight: 400;
+   font-size: 75px;
+   line-height: 86px;
+   text-transform: uppercase;
+   color: #ffffff;
+}
 .info {
    text-align: left;
    padding-bottom: 446px;
    .info_wrapper {
       max-width: 610px;
    }
-   h1 {
-      font-family: "Furore", sans-serif;
-      font-weight: 400;
-      font-size: 75px;
-      line-height: 86px;
-      text-transform: uppercase;
-      color: #ffffff;
-   }
+
    span {
       font-family: "Strong", sans-serif;
       font-weight: 400;
@@ -1720,7 +1720,7 @@ nav {
 }
 
 .content_wrapper {
-   height: 100%;
+   min-height: 100%;
    display: flex;
    flex-direction: column;
 }
@@ -1772,7 +1772,7 @@ nav {
 .contact_link {
    font-family: "Strong", sans-serif;
    font-weight: 400;
-   font-size: 24px ;
+   font-size: 24px;
 
    line-height: 29px;
    color: #ffffff;
@@ -1784,20 +1784,128 @@ nav {
       transform: rotate(360deg);
    }
 }
-@media (max-width: 767.98px) {
-   .contact {
-      .footer_png_wrapper {
-         margin-bottom: 22px !important;
+
+.partner {
+   background: #091317 !important;
+   .h1 {
+      span {
+         font-family: "Furore", sans-serif;
+         text-transform: uppercase;
+         font-weight: 400;
+         font-size: 75px;
+         text-transform: uppercase;
+         background: linear-gradient(
+            92.3deg,
+            #00b292 -10.87%,
+            #2dffd9 21.75%,
+            #54ffe0 60.54%,
+            #03776f 98.95%
+         );
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: #fff;
+         background-clip: text;
+         text-fill-color: #fff;
       }
    }
-   footer {
-      padding-bottom: 0 !important;
+   .desktop_nav {
+      padding-bottom: 160px;
+   }
+   .header_container {
+      background-image: url(../img/Page_News/Partner/Header_bg.png);
+      background-size: cover 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 800px;
+      background-origin: content-box;
+      .info {
+         padding-bottom: 120px;
+         .info_wrapper {
+            max-width: fit-content;
+            .text {
+               margin-top: 36px;
+               margin-bottom: 50px;
+            }
+         }
+      }
+      .text {
+         text-align: left;
+      }
+   }
+   .link_to_telegram_info {
+      gap: 30px;
    }
 }
-@media (min-width: 768px) {
-   .contact {
-      .footer_png_wrapper {
-         display: none;
+
+.footer_container {
+   background-image: url(../img/Page_News/Partner/Footer_bg.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 150px;
+   //    padding-bottom: 105px;
+   .footer_png_wrapper {
+      margin-bottom: 36px;
+   }
+   .footer {
+      margin-top: 75px;
+   }
+   .cards_wrapper {
+      display: flex;
+      justify-content: space-between;
+      .cards_wrapper_item {
+         transition: 0.5s;
+         background-image: url(../img/Page_News/Partner/card_bg.png);
+         background-size: 100% 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         max-width: 530px;
+         max-height: fit-content;
+         padding: 60px 30px;
+         text-align: center;
+         cursor: pointer;
+         .cards_wrapper_item_title {
+            font-family: "Furore", sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -10.87%,
+               #2dffd9 21.75%,
+               #54ffe0 60.54%,
+               #03776f 98.95%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+         }
+         .green_text {
+            margin-top: 38px;
+            margin-bottom: 20px;
+            font-family: "Strong", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: lowercase;
+            background: linear-gradient(
+               92.3deg,
+               #00b292 -10.87%,
+               #2dffd9 21.75%,
+               #54ffe0 60.54%,
+               #03776f 98.95%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+         }
+         .button {
+            margin: auto;
+         }
       }
    }
 }
