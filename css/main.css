@@ -4174,7 +4174,7 @@ nav ul {
 }
 .partner .header_container {
   background-image: url(../img/Page_News/Partner/Header_bg.png);
-  background-size: cover 100%;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 800px;
