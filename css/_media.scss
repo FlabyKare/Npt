@@ -1750,7 +1750,6 @@
       }
       .gradient_and_defolt_text {
          font-size: 15px !important;
-         text-align: center !important;
          line-height: 30px !important;
       }
    }
@@ -1776,16 +1775,6 @@
       }
    }
    .partner {
-      //   .header_container {
-      //     .info_wrapper{
-      //         margin-top: 44px !important;
-      //     }
-      //      .btns {
-      //         flex-direction: row !important;
-      //         flex-wrap: wrap !important;
-      //         justify-content: center !important;
-      //      }
-      //   }
       .desktop_nav {
          padding-bottom: 0 !important;
       }
@@ -1845,23 +1834,31 @@
             }
          }
       }
-      .link_to_telegram {
-         flex-wrap: wrap;
+   }
+   .link_to_telegram {
+      flex-wrap: wrap;
+      p {
+         margin: auto auto auto 0 !important;
+
+         span {
+            display: block;
+            margin-bottom: 10px !important;
+         }
+      }
+      .button {
+         margin: auto auto auto 0;
          p {
-            text-align: left !important;
-            span {
-               display: block;
-               margin-bottom: 25px !important;
-            }
+            text-align: center !important;
+            font-size: 16px !important;
          }
-         .button {
-            margin: auto auto auto 0;
-            width: 100% !important;
-            p {
-               text-align: center !important;
-               font-size: 16px !important;
-            }
-         }
+      }
+   }
+   .bot {
+      .news_info {
+         margin-top: 20% !important;
+      }
+      .title {
+         margin-bottom: 16px !important;
       }
    }
 }
@@ -1926,21 +1923,21 @@
             }
          }
       }
-      .link_to_telegram {
-         flex-wrap: wrap;
-         p {
-            text-align: left !important;
-            span {
-               display: block;
-               margin-bottom: 25px !important;
-            }
-         }
-         .button {
-            margin: auto auto auto 0;
+   }
+   .link_to_telegram {
+      flex-wrap: wrap;
+      margin: auto auto auto 0 !important;
+
+      p {
+         span {
+            display: block;
+            margin-bottom: 10px !important;
          }
       }
+      .button {
+         margin: auto auto auto 0;
+      }
    }
-
    .news {
       .footer_p {
          margin-top: 13px !important;
@@ -1967,7 +1964,6 @@
       }
       .gradient_and_defolt_text {
          font-size: 20px !important;
-         text-align: center !important;
          line-height: 30px !important;
       }
    }
@@ -2012,26 +2008,25 @@
          padding-top: 70px !important;
          padding-bottom: 0 !important;
       }
-      .link_to_telegram {
-         .link_to_telegram_info {
-            flex-wrap: wrap;
+   }
+   .link_to_telegram {
+      .link_to_telegram_info {
+         flex-wrap: wrap;
 
-            gap: 30px !important;
-         }
-         .gradient_and_defolt_text {
-            text-align: left !important;
-            min-width: 530px;
-            span {
-               display: block;
-               //    margin-bottom: 25px !important;
-            }
-         }
-         .button {
-            margin: auto auto auto 0;
+         gap: 30px !important;
+      }
+      .gradient_and_defolt_text {
+         text-align: left !important;
+         min-width: 530px;
+         span {
+            display: block;
+            //    margin-bottom: 25px !important;
          }
       }
+      .button {
+         margin: auto auto auto 0;
+      }
    }
-
    .cards_wrapper {
       //   gap: 45px;
       flex-wrap: wrap;
@@ -2048,11 +2043,6 @@
          .text {
             font-size: 19px !important;
          }
-      }
-   }
-   .link_to_telegram_info {
-      .button {
-         margin-left: 30px;
       }
    }
 }

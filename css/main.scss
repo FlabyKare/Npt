@@ -1917,6 +1917,25 @@ nav {
    height: 100%;
 }
 
+.bot {
+   background: url(../img/Page_News/bot/bot_bg.jpg) !important;
+   background-position-x: inherit !important;
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   .title {
+      margin-bottom: 45px;
+      padding-bottom: 0 !important;
+   }
+   .news_info {
+      .defolt_P {
+         max-width: 860px;
+         margin: 0;
+      }
+      .button {
+         margin-top: 60px;
+      }
+   }
+}
 .wrapper {
    position: relative;
    min-height: 100%;

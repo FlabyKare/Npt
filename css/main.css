@@ -1890,7 +1890,6 @@
   }
   .link_to_telegram_info .gradient_and_defolt_text {
     font-size: 15px !important;
-    text-align: center !important;
     line-height: 30px !important;
   }
   .contact .contact_info {
@@ -1964,24 +1963,29 @@
   .partner .footer_container .cards_wrapper .cards_wrapper_item .button p {
     font-size: 14px !important;
   }
-  .partner .link_to_telegram {
+  .link_to_telegram {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .partner .link_to_telegram p {
-    text-align: left !important;
+  .link_to_telegram p {
+    margin: auto auto auto 0 !important;
   }
-  .partner .link_to_telegram p span {
+  .link_to_telegram p span {
     display: block;
-    margin-bottom: 25px !important;
+    margin-bottom: 10px !important;
   }
-  .partner .link_to_telegram .button {
+  .link_to_telegram .button {
     margin: auto auto auto 0;
-    width: 100% !important;
   }
-  .partner .link_to_telegram .button p {
+  .link_to_telegram .button p {
     text-align: center !important;
     font-size: 16px !important;
+  }
+  .bot .news_info {
+    margin-top: 20% !important;
+  }
+  .bot .title {
+    margin-bottom: 16px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -2038,18 +2042,16 @@
     font-size: 19px !important;
     text-align: center !important;
   }
-  .partner .link_to_telegram {
+  .link_to_telegram {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: auto auto auto 0 !important;
   }
-  .partner .link_to_telegram p {
-    text-align: left !important;
-  }
-  .partner .link_to_telegram p span {
+  .link_to_telegram p span {
     display: block;
-    margin-bottom: 25px !important;
+    margin-bottom: 10px !important;
   }
-  .partner .link_to_telegram .button {
+  .link_to_telegram .button {
     margin: auto auto auto 0;
   }
   .news .footer_p {
@@ -2078,7 +2080,6 @@
   }
   .link_to_telegram_info .gradient_and_defolt_text {
     font-size: 20px !important;
-    text-align: center !important;
     line-height: 30px !important;
   }
   .contact .contact_info {
@@ -2112,19 +2113,19 @@
     padding-top: 70px !important;
     padding-bottom: 0 !important;
   }
-  .partner .link_to_telegram .link_to_telegram_info {
+  .link_to_telegram .link_to_telegram_info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px !important;
   }
-  .partner .link_to_telegram .gradient_and_defolt_text {
+  .link_to_telegram .gradient_and_defolt_text {
     text-align: left !important;
     min-width: 530px;
   }
-  .partner .link_to_telegram .gradient_and_defolt_text span {
+  .link_to_telegram .gradient_and_defolt_text span {
     display: block;
   }
-  .partner .link_to_telegram .button {
+  .link_to_telegram .button {
     margin: auto auto auto 0;
   }
   .cards_wrapper {
@@ -2143,9 +2144,6 @@
   }
   .cards_wrapper .cards_wrapper_item .text {
     font-size: 19px !important;
-  }
-  .link_to_telegram_info .button {
-    margin-left: 30px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -4270,6 +4268,24 @@ nav ul {
 .bot_html,
 .bot {
   height: 100%;
+}
+
+.bot {
+  background: url(../img/Page_News/bot/bot_bg.jpg) !important;
+  background-position-x: inherit !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.bot .title {
+  margin-bottom: 45px;
+  padding-bottom: 0 !important;
+}
+.bot .news_info .defolt_P {
+  max-width: 860px;
+  margin: 0;
+}
+.bot .news_info .button {
+  margin-top: 60px;
 }
 
 .wrapper {

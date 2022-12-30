@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' class="flex_html bot_html">
+<html lang='en'>
 
 <head>
     <meta charset='UTF-8'>
@@ -18,8 +18,7 @@
     <title>Webmaster</title>
 </head>
 
-
-<body class="flex_body bot">
+<body class="news bot">
     <div id="preloader">
         <div id="loader"></div>
     </div>
@@ -44,16 +43,18 @@
 
     </ul>
 
-    <div class="wrapper ">
 
+    <div class="flex_container">
         <main class="main_header_wrapper container">
+
+
             <nav class="desktop_nav">
                 <a class="logo_link" href="../index.html">
                     <img class="hover_svg logo" width="60px" height="25px" src="../img/Header/logo.png" alt="">
                 </a>
                 <div class="links desktop_links">
-                    <a class="nav_links" href="news.html">О нас</a>
-                    <a class="nav_links" href="#">Как вступить?</a>
+                    <a class="nav_links" href="#">О нас</a>
+                    <a class="nav_links" href="partner.html">Как вступить?</a>
                     <a class="nav_links" href="contact.html">Контакты</a>
                 </div>
 
@@ -92,10 +93,10 @@
 
                 <section class="menu_wrapper">
                     <div class="links ">
-                        <a class="menu_link closeMenu " href="news.html">
+                        <a class="menu_link closeMenu " href="#">
                             О нас
                         </a>
-                        <a class="menu_link closeMenu " href="#">
+                        <a class="menu_link closeMenu " href="partner.html">
                             Как вступить?
                         </a>
                         <a class="menu_link closeMenu " href="contact.html">
@@ -125,31 +126,68 @@
 
         </main>
 
-        <footer class="flex_footer footer">
-            <img class="footer_line_min768" src="../img/Footer/line_for_bottom_footer.png" alt="">
-            <img class="footer_line_max768 mobile_footer_mtop" src="../img/Footer/line_for_bottom_footer_mobile.png"
-                alt="">
-            <p class="footer_p">© Neural prediction technologies</p>
-
-            <ul class="footer_png_wrapper">
-                <li class="hover_svg">
-                    <a href="https://t.me/MeMuslim1">
-                        <img width="30px" height="30px" src="../img/Header/telegram.png" alt="">
-                    </a>
-                </li>
-                <li class="hover_svg">
-                    <a href="https://www.instagram.com/webmaster_____/">
-                        <img width="30px" height="30px" src="../img/Header/instagram.png" alt="">
-                    </a>
-                </li>
-                <li class="popup_call hover_svg">
-                    <img width="32px" height="23px" src="../img/Header/email.png" alt="">
-                </li>
-            </ul>
-        </footer>
+        <section class="news_info container">
+            <h3 class="title">Наш <span>Бот</span></h3>
+            <p class="defolt_P"><span>Друзья наш бот работает,</span></p>
+            <br>
+            <p class="defolt_P">но пока только на нашем сервере. Мы сейчас активно работаем
+                над тем, чтобы предоставить вам тестовый доступ к нему.
+            </p>
+            <br>
+            <p class="defolt_P">Мы думаем это случится в ближайшие пару месяцев, а пока чтобы 
+                не пропустить запуск подпишитесь на наши новости, мы обязательно 
+                обо всем сообщим
+            </p>
+            <a class="button" href="https://t.me/MeMuslim1">
+                <p>Подписаться</p>
+            </a>
+        </section>
     </div>
 
+    <section class="footer">
 
+
+        <section class="link_to_telegram">
+            <div class="line first_line_footer">
+                <img width="100%" class="footer_line_max768 mobile_footer_line"
+                    src="../img/Page_News/footer_info_line.png" alt="">
+
+                <img class="footer_line_min768" src="../img/Footer/line_for_bottom_footer.png" alt="">
+            </div>
+            <main class="link_to_telegram_info container">
+                <p class="gradient_and_defolt_text">
+                    <span>Так же можно подписаться на наш телеграмм,</span> здесь мы тоже будем публиковать самое
+                    главное
+                </p>
+                <a class="button" href="https://t.me/MeMuslim1">
+                    <p>Ссылка на ТГ</p>
+                </a>
+            </main>
+            <div class="line">
+                <img width="100%" class="footer_line_max768 mobile_footer_line"
+                    src="../img/Page_News/footer_info_line.png" alt="">
+
+                <img class="footer_line_min768" src="../img/Footer/line_for_bottom_footer.png" alt="">
+            </div>
+        </section>
+        <img class="footer_line_max768 mobile_footer_mtop" src="../img/Footer/line_for_bottom_footer_mobile.png" alt="">
+        <p class="footer_p">© Neural prediction technologies</p>
+        <ul class="footer_png_wrapper">
+            <li class="hover_svg">
+                <a href="https://t.me/MeMuslim1">
+                    <img width="30px" height="30px" src="../img/Header/telegram.png" alt="">
+                </a>
+            </li>
+            <li class="hover_svg">
+                <a href="https://www.instagram.com/webmaster_____/">
+                    <img width="30px" height="30px" src="../img/Header/instagram.png" alt="">
+                </a>
+            </li>
+            <li class="popup_call hover_svg">
+                <img width="32px" height="23px" src="../img/Header/email.png" alt="">
+            </li>
+        </ul>
+    </section>
 
 
     <script>
@@ -211,7 +249,6 @@
                 btn_animation();
             })
         );
-
 
         //* Popup
 
@@ -291,8 +328,6 @@
         });
 
     </script>
-
-
 
 </body>
 
