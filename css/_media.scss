@@ -449,10 +449,6 @@
    .why_button {
       margin: 0 15px 0 auto !important;
    }
-
-   .balance_wrapper {
-      margin-top: 200px !important;
-   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -694,10 +690,9 @@
          }
       }
    }
+}
+@media (max-width: 991.98px) {
    .table_container {
-      //   .btn_gragient {
-      //      margin-top: 165px !important;
-      //   }
       .slick_planshet_arrow {
          display: none !important;
       }
@@ -725,6 +720,9 @@
    }
    .tables_btn {
       margin: 165px auto 58px !important;
+   }
+   .balance_wrapper {
+      margin-top: 200px !important;
    }
 }
 @media (max-width: 991.98px) {
