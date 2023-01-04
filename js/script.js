@@ -58,19 +58,17 @@ menuLinks.forEach((link) =>
 );
 
 //!   Плавный переход по "Якорным ссылкам"
-const anchors = document.querySelectorAll('a[href*="#"]');
-for (let anchor of anchors) {
-   anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const blockID = anchor.getAttribute("href").substr(1);
-
-      document.getElementById(blockID).scrollIntoView({
-         behavior: "smooth",
-         block: "start",
-      });
+jQuery(document).ready(function () {
+   jQuery("a.scrollto").click(function () {
+      elementClick = jQuery(this).attr("href");
+      destination = jQuery(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate(
+         { scrollTop: destination },
+         900
+      );
+      return false;
    });
-}
+});
 
 // слайдер из таблиц
 
