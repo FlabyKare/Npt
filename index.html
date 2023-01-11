@@ -33,7 +33,25 @@
     <div id="preloader">
         <div id="loader"></div>
     </div>
+    <ul class="popup">
+        <div class="popup_back_black"></div>
 
+        <form class="popup_wrapper" action="telegram.php" method="POST">
+            <h5>Связаться</h5>
+            <img class="close" width="35px" height="35px" src="img/close.png" alt="">
+
+            <input class="popup_item_value form-control form_input form_name" type="text" name="name"
+                placeholder="Ваше имя" required minlength="4" maxlength="25">
+            <input class="popup_item_value form-control form_input form_tel tel" type="tel" name="phone"
+                placeholder="+7 (XXX) XXX XX XX" required>
+            <input class="popup_item_value user_text form-control form_input form_text" type="hidden" name="text"
+                placeholder="Сообщение">
+            <textarea class="popup_item_value " oninput="document.querySelector('.user_text').value = this.value;"
+                placeholder="Введите что-нибдуь"></textarea>
+            <input class="form_input form_btn popup-btn" type="submit" value="Отправить">
+        </form>
+
+    </ul>
     <div class="table_visible">
         <img class="table_visible_item" src="img/Header/table.png" alt="">
     </div>
@@ -42,15 +60,15 @@
         <main class="main_header_wrapper container">
 
 
-            <nav class="desktop_nav">
+            <nav class="desktop_nav element-animation">
                 <img class="hover_svg logo" width="60px" height="25px" src="img/Header/logo.png" alt="">
                 <div class="links desktop_links">
-                    <a class="nav_links" href="#">О нас</a>
-                    <a class="nav_links" href="#">Как вступить?</a>
-                    <a class="nav_links" href="#">Контакты</a>
+                    <a class="nav_links" href="pages/news.html">О нас</a>
+                    <a class="nav_links" href="pages/partner.html">Как вступить?</a>
+                    <a class="nav_links" href="pages/contact.html">Контакты</a>
                 </div>
 
-                <div class="desktop">
+                <div class="desktop ">
                     <ul class="messengers desktop_messengers">
                         <li class=" hover_svg">
                             <img width="30px" height="26px" src="img/Header/telegram.png" alt="">
@@ -58,7 +76,7 @@
                         <li class="instagram hover_svg">
                             <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
                         </li>
-                        <li class=" hover_svg">
+                        <li class=" hover_svg  popup_call">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
                         </li>
                     </ul>
@@ -81,13 +99,13 @@
 
                 <section class="menu_wrapper">
                     <div class="links ">
-                        <a class="menu_link closeMenu " href="#last">
+                        <a class="menu_link closeMenu " href="pages/news.html">
                             О нас
                         </a>
-                        <a class="menu_link closeMenu " href="#">
+                        <a class="menu_link closeMenu " href="pages/partner.html">
                             Как вступить?
                         </a>
-                        <a class="menu_link closeMenu " href="#">
+                        <a class="menu_link closeMenu " href="pages/contact.html">
                             Контакты
                         </a>
                     </div>
@@ -100,7 +118,7 @@
                             <img width="26px" height="26px" src="img/Header/instagram.png" alt="">
 
                         </li>
-                        <li class=" hover_svg">
+                        <li class="menu_link popup_call hover_svg">
                             <img width="32px" height="23px" src="img/Header/email.png" alt="">
 
                         </li>
@@ -110,12 +128,13 @@
 
             </nav>
         </main>
-        <section class="info container body_hide">
-            <div class="info_wrapper">
-                <h1>ТЕХНОЛОГИИ</h1>
+        <section class="info container body_hide element-animation">
+            <div class="info_wrapper ">
+                <h1 class="h1  element-animation">ТЕХНОЛОГИИ</h1>
                 <span>Нейронного прогнозирования</span>
-                <p class="before_paragraph">разработка систем прогнозирования многомерных временных рядов</p>
-                <div class="btns">
+                <p class="before_paragraph  element-animation">разработка систем прогнозирования многомерных временных
+                    рядов</p>
+                <div class="btns element-animation">
                     <button class="btn btn_gragient">Присоединиться</button>
                     <a href="#">Подробнее</a>
                 </div>
@@ -125,15 +144,19 @@
             <div class="about_wrapper">
                 <h3 class="title"><span>О </span>технологии</h3>
                 <ul>
-                    <li>Мы команда разработчиков, которая с 2019 года занимается научными исследованиями в области
+                    <li class=" element-animation">Мы команда разработчиков, которая с 2019 года занимается научными
+                        исследованиями в области
                         нейронного прогнозирования многомерных временных последовательностей.</li>
-                    <li>Используя современные алгоритмы построения и обучения нейронных сетей различной топологии, мы
+                    <li class=" element-animation">Используя современные алгоритмы построения и обучения нейронных сетей
+                        различной топологии, мы
                         создали эффективную систему прогнозирования сложных последовательностей данных. Система
                         прогнозирования может быть применена во многих областях науки, техники и бизнеса.</li>
-                    <li>Учитывая наш интерес к миру криптовалют и технологии блокчейн, мы решили испытать нашу систему
+                    <li class=" element-animation">Учитывая наш интерес к миру криптовалют и технологии блокчейн, мы
+                        решили испытать нашу систему
                         прогнозирования на рынке криптовалютных активов и получили стабильный положительный результат,
                         который превосходит по эффективности все что мы знаем. </li>
-                    <li>Наша система прогнозирования основана на комплексе нейронных сетей разной конфигурации, поэтому
+                    <li class=" element-animation">Наша система прогнозирования основана на комплексе нейронных сетей
+                        разной конфигурации, поэтому
                         мы можем ее назвать искусственным интеллектом. Искусственный <span>интеллект обучен на более 5
                             000 000 реальных ситуаций на рынке криптовалют и показывает прекрасную статистику
                             прогнозирования.</span></li>
@@ -149,16 +172,18 @@
                 <img class="desktop_title_border" src="img/Header/title_border.png" alt="">
                 <img class="mobile_title_border" src="img/Mobile_bg/third_title.png" alt="">
 
-                <h3 class="title"><span>Почему </span>нейронные сети?</h3>
+                <h3 class="title  element-animation"><span>Почему </span>нейронные сети?</h3>
             </div>
             <ul>
-                <li class="third_subtitle">Нейронные сети могут замечать сложные закономерности
+                <li class="third_subtitle element-animation">Нейронные сети могут замечать сложные закономерности
                     в последовательности данных. </li>
-                <li class="middle_child">Так же как опытный трейдер обращает внимание на каждую мелочь в движении цены,
+                <li class="middle_child element-animation">Так же как опытный трейдер обращает внимание на каждую мелочь
+                    в движении цены,
                     нейронные сети
                     способны учесть огромное число параметров и сделать правильный прогноз. </li>
                 <img class="mobile_glass_ball" src="img/Mobile_bg/ball.png" alt="">
-                <li class="last_li"><span>СЕГОДНЯ</span> нейронные сети побеждают человека в игру го, в доту, не
+                <li class="last_li element-animation"><span>СЕГОДНЯ</span> нейронные сети побеждают человека в игру го,
+                    в доту, не
                     оставляют шанса пилотам
                     ассам на
                     авиасимуляторе, ходят даже слухи что у некоторых из них появилось сознание! </li>
@@ -166,17 +191,19 @@
             <img class="sphere_desktop" src="img/Header/sphere_desktop.png" alt="">
         </main>
         <section class="why body_hide">
-            <img class="desktop_line" width="100%" src="img/Header/line.png" alt="">
+            <img class="desktop_line element-animation" width="100%" src="img/Header/line.png" alt="">
             <img class="mobile_line" width="100%" src="img/Mobile_bg/line.png" alt="">
 
             <main class="why_wrapper container">
-                <h3 class="title mobile_padding"><span>Почему </span><br> еще никто этого не сделал?</h3>
-                <p class="text mobile_padding">На самом деле мы не знаем возможно крупные банки и корпорации давно
+                <h3 class="title mobile_padding element-animation"><span>Почему </span><br> еще никто этого не сделал?
+                </h3>
+                <p class="text mobile_padding element-animation">На самом деле мы не знаем возможно крупные банки и
+                    корпорации давно
                     сделали это, мы
                     независимые
                     разработчики совместно с опытными трейдерами реализовали стратегию среднесрочной торговли на
                     нейронных сетях и поверьте это было не просто</p>
-                <div class="why_button">
+                <div class="why_button element-animation">
                     <button class="btn btn_gragient">Мы ведем свой проект с 2019 года!</button>
                 </div>
 
@@ -187,14 +214,15 @@
                 <section class="table_container mobile_padding">
                     <div class="head">
                         <div class="head_info">
-                            <h3 class="title"><span>Какие </span>результаты?</h3>
-                            <p class="text">Здесь таблица и картинка показывает результаты эмуляции торговли
+                            <h3 class="title element-animation"><span>Какие </span>результаты?</h3>
+                            <p class="text element-animation">Здесь таблица и картинка показывает результаты эмуляции
+                                торговли
                                 робота за 4,5 года и это впечатляет!</p>
                         </div>
                         <img class="dron" src="img/Header/dron.png" alt="">
                     </div>
 
-                    <section class="table_wrapper">
+                    <section class="table_wrapper element-animation">
 
                         <div class="table_slider">
 
@@ -245,9 +273,10 @@
                     </section>
                     <img class="slick_arrow prev slick_mobile_arrow" src="img/Mobile_bg/arr_up.svg" alt="">
                     <img class="slick_arrow next slick_mobile_arrow" src="img/Mobile_bg/arr_bottom.svg" alt="">
-                    <button class="view_full tables_btn btn btn_gragient">Посмотреть полностью</button>
+                    <button class="view_full tables_btn btn btn_gragient element-animation">Посмотреть
+                        полностью</button>
 
-                    <div class="balance_wrapper">
+                    <div class="balance_wrapper element-animation">
                         <img class="table_show balance" src="img/Header/balance.png" alt="">
                     </div>
                 </section>
@@ -257,10 +286,10 @@
     </section>
 
     <section class="who_we body_hide">
-        <main class="who_we_wrapper">
-            <h3 class="title">Кто <span>мы?</span></h3>
+        <main class="who_we_wrapper ">
+            <h3 class="title element-animation">Кто <span>мы?</span></h3>
 
-            <div class="slider_exemple">
+            <div class="slider_exemple  element-animation">
                 <div class="carousel"></div>
             </div>
 
@@ -269,44 +298,50 @@
 
     <section class="about body_hide about_slider">
         <div class="about_wrapper container">
-            <h3 class="title"><span>Какой у нас </span>план?</h3>
+            <h3 class="title element-animation"><span>Какой у нас </span>план?</h3>
             <ul class="plan-slider">
-                <li>На сегодняшний день мы разработали и обучили многослойную нейронную сеть, которая позволяет добиться
+                <li class=" element-animation">На сегодняшний день мы разработали и обучили многослойную нейронную сеть,
+                    которая позволяет добиться
                     хорошей статистики прогнозирования поведения цены активов в реальном времени. Результаты ее работы
                     действительно впечатляют. Вместе с этим мы понимаем, что технология находится в самом начале своего
                     развития, мы видим большое количество возможностей для дальнейшего исследования
                     в области рекуррентных сетей нового поколения, а также адаптации архитектуры Transformer для решения
                     задачи прогнозирования многомерных данных. </li>
-                <li>Мы видим наше будущее таким, что мы можем создать тысячи по-разному обученных нейронных сетей,
+                <li class=" element-animation">Мы видим наше будущее таким, что мы можем создать тысячи по-разному
+                    обученных нейронных сетей,
                     которые будут иметь разную эффективность прогнозирования и разную архитектуру. Нейросеть, которая
                     работает сегодня имеет среднюю эффективность порядка 90-100% в год. Мы видим, что
                     усовершенствованные сети могут быть значительно более эффективными. Если у нас будет много
                     нейросетей, мы сделаем для них маркетплейс, так что вы сможете свободно
                     купить доступ к конкретной Нейросети
                     и так же его продать. </li>
-                <li>Каждая Нейросеть будет привязана к NFT-токену, а показатели ее торговли,
+                <li class=" element-animation">Каждая Нейросеть будет привязана к NFT-токену, а показатели ее торговли,
                     обучения и тестирования будут записаны
                     в блокчейн, для того чтобы их нельзя было подделать. Это новая реальность, которая может быть
                     создана если к технологии нейросетевого прогнозирования
                     добавить технологию блокчейн. <span>МЫ РАДЫ СОЗДАВАТЬ ТАКОЕ БУДУЩЕЕ!</span></li>
             </ul>
             <ul class="desktopList">
-                <li>На сегодняшний день мы разработали и обучили многослойную нейронную сеть, которая позволяет добиться
+                <li class=" element-animation">На сегодняшний день мы разработали и обучили многослойную нейронную сеть,
+                    которая позволяет добиться
                     хорошей статистики прогнозирования поведения цены активов в реальном времени. Результаты ее работы
                     действительно впечатляют. Вместе с этим мы понимаем, что технология находится в самом начале своего
                     развития, мы видим большое количество возможностей для дальнейшего исследования
                     в области рекуррентных сетей нового поколения, а также адаптации архитектуры Transformer для решения
                     задачи прогнозирования многомерных данных. </li>
-                <li>Мы видим наше будущее таким, что мы можем создать тысячи по-разному обученных нейронных сетей,
+                <li class=" element-animation">Мы видим наше будущее таким, что мы можем создать тысячи по-разному
+                    обученных нейронных сетей,
                     которые будут иметь разную эффективность прогнозирования и разную архитектуру. Нейросеть, которая
                     работает сегодня имеет среднюю эффективность порядка 90-100% в год. Мы видим, что
                     усовершенствованные сети могут быть значительно более эффективными</li>
-                <li>Если у нас будет много нейросетей, мы сделаем для них маркетплейс, так что вы сможете свободно
+                <li class=" element-animation">Если у нас будет много нейросетей, мы сделаем для них маркетплейс, так
+                    что вы сможете свободно
                     купить доступ к конкретной Нейросети
                     и так же его продать. Каждая Нейросеть будет привязана к NFT-токену, а показатели ее торговли,
                     обучения и тестирования будут записаны
                     в блокчейн, для того чтобы их нельзя было подделать.</li>
-                <li>Это новая реальность, которая может быть создана если к технологии нейросетевого прогнозирования
+                <li class=" element-animation">Это новая реальность, которая может быть создана если к технологии
+                    нейросетевого прогнозирования
                     добавить технологию блокчейн. <span>МЫ РАДЫ СОЗДАВАТЬ ТАКОЕ БУДУЩЕЕ!</span></li>
             </ul>
         </div>
@@ -314,12 +349,12 @@
 
     <footer class="roadmap body_hide">
         <img width="100%" src="img/Footer/Footer_line.png" alt="">
-        <main class="roadmap_wrapper container">
-            <h3 class="title">Можно посмотреть <span>road map?</span></h3>
-            <img class="footer_city" src="img/Footer/footer_city.png" alt="">
+        <main id="roadmap_wrapper_ID" class="roadmap_wrapper container">
+            <h3 class="title element-animation">Можно посмотреть <span>road map?</span></h3>
+            <img class="footer_city element-animation" src="img/Footer/footer_city.png" alt="">
 
             <ul class="roadmap_before_slider">
-                <li class="roadmap_before_slider_item roadmap_before_slider_item1">
+                <li class="roadmap_before_slider_item roadmap_before_slider_item1 ">
                     <img src="img/Footer/slider_item_bg.png" alt="">
                     <svg class="close_svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -487,87 +522,148 @@
 
             </ul>
 
-            <ul class="roadmap_list">
+            <ul class="roadmap_list element-animation">
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_140px">
                             <h6 class="roadmap_item_title">2019</h6>
                             <p class="roadmap_item_text">Начало разработки</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
                 </li>
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_170px">
                             <h6 class="roadmap_item_title">2020</h6>
                             <p class="roadmap_item_text">применение нейронных сетей</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                 </li>
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_170px">
                             <h6 class="roadmap_item_title">2021</h6>
                             <p class="roadmap_item_text">получен опытный рабочий комплекс</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                 </li>
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_170px">
                             <h6 class="roadmap_item_title">2022</h6>
                             <p class="roadmap_item_text">разработка рабочей версии</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                 </li>
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_140px">
                             <h6 class="roadmap_item_title">2023</h6>
                             <p class="roadmap_item_text">начало продаж</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                 </li>
 
-                <li class="roadmap_item ">
+                <li class="roadmap_item element-animation ">
                     <div class="roadmap_item_container">
                         <div class="roadmap_item_info max_140px">
                             <h6 class="roadmap_item_title">2024</h6>
                             <p class="roadmap_item_text">проведение IDO</p>
                         </div>
-                        <div class="arrow_down_list">
+                        <a href="#roadmap_wrapper_ID" class="arrow_down_list scrollto">
                             <img class="roadmap_item_img" src="img/Footer/arrow_list_item.png" alt="">
-                        </div>
+                        </a>
                     </div>
 
                 </li>
             </ul>
 
         </main>
+
+        <section class="links_footer container">
+            <main class="links_footer_wrapper">
+                <h3 class="max992 title element-animation">Как <span>вступить?</span></h3>
+
+                <img class="jar" src="img/Footer/jar.png" alt="">
+                <div class="links_wrapper">
+                    <h3 class="min992 title element-animation">Как <span>вступить?</span></h3>
+
+                    <ul class="footer_links">
+                        <li class="footer_item element-animation">
+                            <img class="footer_icon" width="47px" height="47px" src="img/Footer/news.png" alt="">
+                            <a class="footer_item_link" href="pages/news.html">
+                                <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
+                                <p class="footer_link_text">Подписаться на новости</p>
+                            </a>
+                        </li>
+                        <li class="footer_item element-animation">
+                            <img class="footer_icon" width="47px" height="47px" src="img/Footer/partner.png" alt="">
+                            <a class="footer_item_link" href="pages/partner.html">
+                                <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
+                                <p class="footer_link_text">Стать инвестором партнером</p>
+                            </a>
+                        </li>
+                        <li class="footer_item element-animation">
+                            <img class="footer_icon" width="47px" height="47px" src="img/Footer/robot.png" alt="">
+                            <a class="footer_item_link" href="pages/bot.html">
+                                <img class="footer_link_bg" src="img/Footer/link_background.png" alt="">
+                                <p class="footer_link_text">Протестировать бота!</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </main>
+        </section>
+
+        <section class="footer">
+            <div class="line">
+                <img class="footer_line_max768" src="img/Footer/line_for_bottom_footer_mobile.png" alt="">
+                <img class="footer_line_min768 element-animation" src="img/Footer/line_for_bottom_footer.png" alt="">
+            </div>
+            <p class="footer_p element-animation">© Neural prediction technologies</p>
+
+            <ul class="footer_png_wrapper">
+                <li class="hover_svg">
+                    <a href="https://t.me/MeMuslim1">
+                        <img width="30px" height="30px" src="img/Header/telegram.png" alt="">
+                    </a>
+                </li>
+                <li class="hover_svg">
+                    <a href="https://www.instagram.com/webmaster_____/">
+                        <img width="30px" height="30px" src="img/Header/instagram.png" alt="">
+                    </a>
+                </li>
+                <li class="popup_call hover_svg">
+                    <img width="32px" height="23px" src="img/Header/email.png" alt="">
+                </li>
+            </ul>
+
+        </section>
     </footer>
 
 
