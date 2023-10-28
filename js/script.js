@@ -1,10 +1,20 @@
 //!    Preloader
 
+// window.onload = function () {
+//    document.body.classList.add("loaded_hiding");
+//    window.setTimeout(function () {
+//       document.body.classList.add("loaded");
+//       document.body.classList.remove("loaded_hiding");
+//    }, 500);
+// };
+
+
+const mainBody = document.body;
+mainBody.classList.add("loaded_hiding");
 window.onload = function () {
-   document.body.classList.add("loaded_hiding");
    window.setTimeout(function () {
-      document.body.classList.add("loaded");
-      document.body.classList.remove("loaded_hiding");
+      mainBody.classList.remove("loaded_hiding");
+      mainBody.classList.add("loaded");
    }, 500);
 };
 
