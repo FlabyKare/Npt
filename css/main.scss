@@ -1,7 +1,9 @@
 @import "_media";
 
 // Обнуление стилей
-
+html {
+   scroll-behavior: smooth;
+}
 html,
 body,
 div,
