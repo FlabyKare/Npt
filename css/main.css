@@ -149,7 +149,7 @@
     z-index: 1000;
   }
   .desktop_links,
-.desktop_messengers {
+  .desktop_messengers {
     display: none !important;
   }
   .examples {
@@ -187,7 +187,7 @@
     z-index: 1000;
   }
   .desktop_links,
-.desktop_messengers {
+  .desktop_messengers {
     display: none !important;
   }
   .examples {
@@ -564,7 +564,7 @@
     overflow-x: scroll !important;
   }
   .balance_wrapper::-webkit-scrollbar {
-    z-index: 999999999999999900000000000000000000 !important;
+    z-index: 1000000000000000000000000000000000000 !important;
     background: rgba(217, 217, 217, 0.28);
     border-radius: 8px;
     -webkit-transition: 0.5s;
@@ -573,12 +573,12 @@
     height: 31px;
   }
   .balance_wrapper::-webkit-scrollbar-track {
-    z-index: 999999999999999900000000000000000000 !important;
+    z-index: 1000000000000000000000000000000000000 !important;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .balance_wrapper::-webkit-scrollbar-thumb {
-    z-index: 999999999999999900000000000000000000 !important;
+    z-index: 1000000000000000000000000000000000000 !important;
     background: radial-gradient(65.2% 65.2% at 60% 34.8%, #00ad8e 0.93%, #007a64 100%);
     width: auto !important;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -724,12 +724,12 @@
     width: fit-content;
   }
   .who_we .slick-list,
-.table_wrapper .slick-list {
+  .table_wrapper .slick-list {
     overflow-x: scroll;
   }
   .who_we .slick-list::-webkit-scrollbar,
-.table_wrapper .slick-list::-webkit-scrollbar {
-    z-index: 999999999999999900000000000000000000 !important;
+  .table_wrapper .slick-list::-webkit-scrollbar {
+    z-index: 1000000000000000000000000000000000000 !important;
     background: rgba(217, 217, 217, 0.28);
     border-radius: 8px;
     -webkit-transition: 0.5s;
@@ -738,14 +738,14 @@
     height: 31px;
   }
   .who_we .slick-list::-webkit-scrollbar-track,
-.table_wrapper .slick-list::-webkit-scrollbar-track {
-    z-index: 999999999999999900000000000000000000 !important;
+  .table_wrapper .slick-list::-webkit-scrollbar-track {
+    z-index: 1000000000000000000000000000000000000 !important;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .who_we .slick-list::-webkit-scrollbar-thumb,
-.table_wrapper .slick-list::-webkit-scrollbar-thumb {
-    z-index: 999999999999999900000000000000000000 !important;
+  .table_wrapper .slick-list::-webkit-scrollbar-thumb {
+    z-index: 1000000000000000000000000000000000000 !important;
     background: radial-gradient(65.2% 65.2% at 60% 34.8%, #00ad8e 0.93%, #007a64 100%);
     width: auto !important;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -754,7 +754,7 @@
     cursor: pointer !important;
   }
   .who_we .slick-list::-webkit-scrollbar-button,
-.table_wrapper .slick-list::-webkit-scrollbar-button {
+  .table_wrapper .slick-list::-webkit-scrollbar-button {
     display: none;
   }
   .table_wrapper {
@@ -921,15 +921,15 @@
     margin: 35px auto 0 !important;
   }
   .table_wrapper .table_slide_item1 .prev,
-.table_wrapper .table_slide_item2 .prev,
-.table_wrapper .table_slide_item3 .prev,
-.table_wrapper .table_slide_item4 .prev {
+  .table_wrapper .table_slide_item2 .prev,
+  .table_wrapper .table_slide_item3 .prev,
+  .table_wrapper .table_slide_item4 .prev {
     top: 68%;
   }
   .table_wrapper .table_slide_item1 .next,
-.table_wrapper .table_slide_item2 .next,
-.table_wrapper .table_slide_item3 .next,
-.table_wrapper .table_slide_item4 .next {
+  .table_wrapper .table_slide_item2 .next,
+  .table_wrapper .table_slide_item3 .next,
+  .table_wrapper .table_slide_item4 .next {
     top: 78% !important;
   }
   .table_wrapper .table_slide_item5 .prev {
@@ -983,7 +983,7 @@
             animation: dronAnimate 3s infinite alternate;
   }
   .footer_city,
-.jar {
+  .jar {
     -webkit-animation: footerCity 5s infinite alternate;
             animation: footerCity 5s infinite alternate;
   }
@@ -1579,7 +1579,7 @@
     line-height: 20px;
   }
   .roadmap_item_info h6,
-.roadmap_item_info p {
+  .roadmap_item_info p {
     text-align: center !important;
   }
   .roadmap_before_slider_item1 {
@@ -1615,7 +1615,7 @@
     max-width: 140px !important;
   }
   .roadmap_item_info h6,
-.roadmap_item_info p {
+  .roadmap_item_info p {
     text-align: center !important;
   }
 }
@@ -1645,7 +1645,7 @@
     max-width: 140px !important;
   }
   .roadmap_item_info h6,
-.roadmap_item_info p {
+  .roadmap_item_info p {
     text-align: center !important;
   }
 }
@@ -2194,9 +2194,8 @@
     top: 4% !important;
   }
 }
-
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -2342,22 +2341,25 @@ body {
   scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: #0a1318 !important;
   width: 15px;
 }
 body::-webkit-scrollbar-track {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 body::-webkit-scrollbar-thumb {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: #1ee5c1 !important;
   cursor: pointer !important;
 }
 body::-webkit-scrollbar-button {
   display: none;
+}
+body:not(.loaded) {
+  overflow: hidden;
 }
 
 .loaded_hiding {
@@ -3291,7 +3293,7 @@ nav ul {
   padding-right: 6px;
 }
 .table_wrapper::-webkit-scrollbar {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: rgba(217, 217, 217, 0.28);
   border-radius: 8px;
   -webkit-transition: 0.5s;
@@ -3299,12 +3301,12 @@ nav ul {
   width: 5px;
 }
 .table_wrapper::-webkit-scrollbar-track {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .table_wrapper::-webkit-scrollbar-thumb {
-  z-index: 999999999999999900000000000000000000 !important;
+  z-index: 1000000000000000000000000000000000000 !important;
   background: radial-gradient(65.2% 65.2% at 60% 34.8%, #00ad8e 0.93%, #007a64 100%);
   width: 100%;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

@@ -155,6 +155,10 @@ body {
    &::-webkit-scrollbar-button {
       display: none;
    }
+
+   &:not(.loaded) {
+      overflow: hidden;
+   }
 }
 
 // Preloader
